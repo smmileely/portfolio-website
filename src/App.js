@@ -1,25 +1,50 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import styled from "styled-components";
+import Navbar from "./Navbar";
+import HeroSection from "./HeroSection";
+import Profile from "./Profile";
+import InfoCard from "./InfoCard";
+import { ExperienceData } from "./data";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Wrapper>
+      <Navbar />
+      <MiddleSection>
+        <HeroSection />
+        <Profile />
+        <ContentWrapper>
+          <InfoCard
+            header={ExperienceData.header}
+            lead={ExperienceData.lead}
+            company={ExperienceData.company}
+            date={ExperienceData.date}
+          />
+        </ContentWrapper>
+      </MiddleSection>
+      <Footer>Footer</Footer>
+    </Wrapper>
   );
-}
+};
 
+const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+`;
+
+const MiddleSection = styled.div`
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+`;
+
+const ContentWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+`;
+
+const Footer = styled.div`
+  display: flex;
+`;
 export default App;
