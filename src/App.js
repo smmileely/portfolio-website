@@ -1,25 +1,22 @@
 import React from "react";
 import styled from "styled-components";
+import Sidebar from "./Sidebar";
 import Navbar from "./Navbar";
 import HeroSection from "./HeroSection";
 import Profile from "./Profile";
 import InfoCard from "./InfoCard";
-import { ExperienceData } from "./data";
+import { ExperienceData, EducationData1 } from "./data";
 
 const App = () => {
   return (
     <Wrapper>
+      <Sidebar />
       <Navbar />
       <MiddleSection>
         <HeroSection />
         <Profile />
         <ContentWrapper>
-          <InfoCard
-            header={ExperienceData.header}
-            lead={ExperienceData.lead}
-            company={ExperienceData.company}
-            date={ExperienceData.date}
-          />
+          <InfoCard header="Experience" data={ExperienceData} />
         </ContentWrapper>
       </MiddleSection>
       <Footer>Footer</Footer>
@@ -41,10 +38,13 @@ const MiddleSection = styled.div`
 
 const ContentWrapper = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 `;
 
 const Footer = styled.div`
   display: flex;
 `;
+
 export default App;

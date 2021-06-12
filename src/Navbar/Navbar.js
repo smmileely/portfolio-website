@@ -18,11 +18,9 @@ const Navbar = () => {
 
 const NavbarContainer = styled.div`
   display: flex;
-  border: solid black;
-  height: 80px;
   align-items: baseline;
   justify-content: flex-end;
-  padding-right: 40px;
+  padding: 20px 40px 20px 0px;
 `;
 
 const Nav = styled.nav`
@@ -38,6 +36,10 @@ const NavLink = styled.a`
   text-decoration: none;
   color: ${COLORS.secondary};
   font-weight: ${WEIGHTS.medium};
+
+  &:hover {
+    text-decoration: revert;
+  }
 `;
 
 export default Navbar;
