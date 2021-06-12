@@ -2,40 +2,24 @@ import React from "react";
 import styled from "styled-components";
 import { COLORS, WEIGHTS } from "../constants";
 
-const InfoCard = ({ header, lead, company, date }) => {
+const InfoCard = ({ header, data }) => {
   return (
     <InfoWrapper>
       <InfoHeader>{header}</InfoHeader>
-      <Lead>{lead}</Lead>
-      <CompanyDateWrapper>
-        <span>{company}</span>
-        <span>{date}</span>
-      </CompanyDateWrapper>
-      {/*<DescriptionWrapper> 
-        <Description>
-          Managed a portfolio of construction developments (Residential/
-          Commercial)
-        </Description>
-        <Description>
-          Carried out post-contract administration from contract documentation,
-          valuations and variations to ensure the timely delivery of the project
-          and within the projected budget.
-        </Description>
-        <Description>
-          Prepared and presented cost plan to facilitate and fulfil client’s
-          requirement within the agreed budget.
-        </Description>
-        <Description>
-          Cultivate strong ties with contractors and clients to negotiate any
-          price differences swiftly and amicably.
-        </Description>
-        <Description>
-          Responsible for conducting in-house trainings for CostX to more than
-          50 Quantity Surveyors improving their productivity by 20% through
-          equipping them with new technical skills that are in line with
-          industry standards.
-        </Description>
-          </DescriptionWrapper> */}
+      {data.map((item, i) => (
+        <InfoContentWrapper key={i}>
+          <Lead>{item.lead}</Lead>
+          <CompanyDateWrapper>
+            <span>{item.company}</span>
+            <span>{item.date}</span>
+          </CompanyDateWrapper>
+          <DescriptionWrapper>
+            {item.descriptions.map((description, i) => (
+              <Description key={i}>{description}</Description>
+            ))}
+          </DescriptionWrapper>
+        </InfoContentWrapper>
+      ))}
     </InfoWrapper>
   );
 };
@@ -44,7 +28,6 @@ const InfoWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  height: 800px;
   padding: 32px;
   background: black;
   width: 50%;
@@ -60,8 +43,13 @@ const InfoHeader = styled.div`
   align-self: center;
 `;
 
+const InfoContentWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0px;
+`;
+
 const Lead = styled.div`
-  margin-top: 20px;
   color: ${COLORS.primary};
   font-weight: ${WEIGHTS.medium};
   font-size: 20px;
@@ -76,8 +64,9 @@ const CompanyDateWrapper = styled.div`
   font-size: 16px;
 `;
 
-const DescriptionWrapper = styled.div`
+const DescriptionWrapper = styled.ul`
   text-align: justify;
+  list-style: square;
 `;
 
 const Description = styled.li`
@@ -87,3 +76,9 @@ const Description = styled.li`
 `;
 
 export default InfoCard;
+
+//          {item.modules ? (
+//             <ModuleWrapper> items.modules.map() </ModuleWrapper>
+//           ) : null}
+
+//if have diff style as experience can do this way
