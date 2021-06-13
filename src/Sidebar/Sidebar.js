@@ -10,40 +10,47 @@ const Sidebar = ({ isOpen, toggle }) => {
         <CloseIcon />
       </Icon>
       <SidebarWrapper>
-        <SidebarLink to="home" onClick={toggle}>
-          Home
-        </SidebarLink>
-        <SidebarLink to="profile" onClick={toggle}>
-          Profile
-        </SidebarLink>
-        <SidebarLink to="skills" onClick={toggle}>
-          Skills
-        </SidebarLink>
-        <SidebarLink to="experience" onClick={toggle}>
-          Experience
-        </SidebarLink>
-        <SidebarLink to="education" onClick={toggle}>
-          Education
-        </SidebarLink>
+        <SidebarMenu>
+          <SidebarLink href="/home" onClick={toggle}>
+            Home
+          </SidebarLink>
+          <SidebarLink href="/profile" onClick={toggle}>
+            Profile
+          </SidebarLink>
+          <SidebarLink href="/skills" onClick={toggle}>
+            Skills
+          </SidebarLink>
+          <SidebarLink href="/experience" onClick={toggle}>
+            Experience
+          </SidebarLink>
+          <SidebarLink href="/education" onClick={toggle}>
+            Education
+          </SidebarLink>
+        </SidebarMenu>
       </SidebarWrapper>
     </SidebarContainer>
   );
 };
 
 const SidebarContainer = styled.aside`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: white;
-  width: 100%;
-  height: 100%;
   display: none;
 
-  @media;
+  @media (max-width: 960px) {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 `;
 
 const Icon = styled(FaBars)`
+  position: absolute;
   color: ${COLORS.secondary};
+  cursor: pointer;
 `;
 
 const CloseIcon = styled(FaTimes)`
@@ -51,6 +58,10 @@ const CloseIcon = styled(FaTimes)`
 `;
 
 const SidebarWrapper = styled.div`
+  background: white;
+`;
+
+const SidebarMenu = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -65,7 +76,8 @@ const SidebarLink = styled.a`
   font-weight: ${WEIGHTS.medium};
 
   &:hover {
-    text-decoration: revert;
+    /* text-decoration: revert; */
+    font-weight: ${WEIGHTS.bold};
   }
 `;
 

@@ -21,6 +21,11 @@ const NavbarContainer = styled.div`
   align-items: baseline;
   justify-content: flex-end;
   padding: 20px 40px 20px 0px;
+
+  @media (max-width: 960px) {
+    /* transition: 0.8s all ease; */
+    display: none;
+  }
 `;
 
 const Nav = styled.nav`
@@ -38,7 +43,8 @@ const NavLink = styled.a`
   font-weight: ${WEIGHTS.medium};
 
   &:hover {
-    text-decoration: revert;
+    /* text-decoration: revert; */
+    font-weight: ${WEIGHTS.bold};
   }
 `;
 
