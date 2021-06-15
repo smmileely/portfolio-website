@@ -5,6 +5,7 @@ import Navbar from "./Navbar";
 import HeroSection from "./HeroSection";
 import Profile from "./Profile";
 import InfoCard from "./InfoCard";
+import Footer from "./Footer";
 import { ExperienceData, EducationData } from "./data";
 
 const App = () => {
@@ -26,7 +27,7 @@ const App = () => {
           <InfoCard header="Education" data={EducationData} />
         </ContentWrapper>
       </MiddleSection>
-      <Footer>Footer</Footer>
+      <Footer />
     </Wrapper>
   );
 };
@@ -48,10 +49,6 @@ const ContentWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-`;
-
-const Footer = styled.div`
-  display: flex;
 `;
 
 export default App;
