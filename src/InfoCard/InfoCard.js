@@ -76,3 +76,9 @@ const Description = styled.li`
 `;
 
 export default InfoCard;
+
+//          {item.modules ? (
+//             <ModuleWrapper> items.modules.map() </ModuleWrapper>
+//           ) : null}
+
+//if have diff style as experience can do this way
