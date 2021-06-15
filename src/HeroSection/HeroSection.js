@@ -4,19 +4,21 @@ import styled from "styled-components";
 const HeroSection = () => {
   return (
     <HeroContainer>
-      <HeroContent></HeroContent>
+      <HeroContent>Hello</HeroContent>
     </HeroContainer>
   );
 };
 
 const HeroContainer = styled.div`
+  background-image: url("../images/HeroSectionImage.JPG");
+  background-size: cover;
+  background-position: bottom center;
   height: 800px;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   z-index: 1; //for other components in Herosection
-  background: black;
 `;
 
 const HeroContent = styled.div`
