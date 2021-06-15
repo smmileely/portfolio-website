@@ -22,11 +22,23 @@ export const ExperienceData = [
   },
 ];
 
-export const EducationData1 = {
-  header: "Education",
-  lead: "BSc Hons in Project and Facilities Management",
-  company: "National University of Singapore",
-  date: "Aug 2015 – Jun 2019",
-  descriptions: ["Managed"],
-  modules: ["BIM", "Measurement"],
-};
+export const EducationData = [
+  {
+    lead: "BSc Hons in Project and Facilities Management",
+    company: "National University of Singapore",
+    date: "Aug 2015 – Jun 2019",
+    descriptions: [
+      "Led a group of 8 committee members to organise welfare activities for the students in Project and Facilities Management and Real Estate.",
+      "Liaised with Great Eastern to get $1500 sponsorship to improve the well being of the students.",
+    ],
+  },
+  {
+    lead: "Semester Exchange, Bachelor of Architecture - BArch",
+    company: "National Cheng Kung University",
+    date: "Sept 2017 – Jan 2018",
+    descriptions: [
+      "Collaborated with a team of 5 students of different nationalities to work on possible Building Information Modelling project for Taiwan.",
+      "Gained insights into Taiwan Culture through active participation in project meetings and networking sessions with professors.",
+    ],
+  },
+];

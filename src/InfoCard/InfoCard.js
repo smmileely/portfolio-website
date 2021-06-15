@@ -30,7 +30,7 @@ const InfoWrapper = styled.div`
   justify-content: flex-start;
   padding: 32px;
   background: black;
-  width: 50%;
+  width: 55%;
 `;
 
 const InfoHeader = styled.div`
@@ -76,9 +76,3 @@ const Description = styled.li`
 `;
 
 export default InfoCard;
-
-//          {item.modules ? (
-//             <ModuleWrapper> items.modules.map() </ModuleWrapper>
-//           ) : null}
-
-//if have diff style as experience can do this way
