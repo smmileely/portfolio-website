@@ -1,22 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import Sidebar from "./Sidebar";
 import Navbar from "./Navbar";
 import HeroSection from "./HeroSection";
 import Profile from "./Profile";
 import InfoCard from "./InfoCard";
-import { ExperienceData, EducationData1 } from "./data";
+import { ExperienceData, EducationData } from "./data";
 
 const App = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <Wrapper>
-      <Sidebar />
-      <Navbar />
+      <Sidebar isOpen={isOpen} toggle={toggle} />
+      <Navbar toggle={toggle} />
       <MiddleSection>
         <HeroSection />
         <Profile />
         <ContentWrapper>
           <InfoCard header="Experience" data={ExperienceData} />
+          <InfoCard header="Education" data={EducationData} />
         </ContentWrapper>
       </MiddleSection>
       <Footer>Footer</Footer>

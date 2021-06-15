@@ -15,7 +15,7 @@ const HeroContainer = styled.div`
   justify-content: center;
   align-items: center;
   position: relative;
-  z-index: 1;
+  z-index: 1; //for other components in Herosection
   background: black;
 `;
 
