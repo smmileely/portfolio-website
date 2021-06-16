@@ -10,7 +10,7 @@ const HeroSection = () => {
         <ImgBg src={HeroSectionImage} />
       </HeroBg>
       <HeroContent>
-        <HeroH1>Weng Lu Yao</HeroH1>
+        <HeroH1>Hi there, I'm Lu Yao.</HeroH1>
         <HeroP>
           A quantity surveyor who is trying to learn new skills and venture into
           the world of codes.
