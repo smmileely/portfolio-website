@@ -40,15 +40,15 @@ const Footer = () => {
 };
 
 const FooterContainer = styled.footer`
-  background-color: black;
+  background: ${COLORS.gray[100]};
 `;
 
 const FooterWrapper = styled.div`
+  height: 400px;
   padding: 48px 24px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end;
+  align-items: flex-end;
   max-width: 1100px;
   margin: 0 auto;
 `;
@@ -73,7 +73,7 @@ const SocialMediaWrap = styled.div`
 const SocialIcons = styled.div`
   display: flex;
   justify-content: space-between;
-  width: 240px;
+  width: 100px;
 `;
 
 const SocialIconLink = styled.a`
