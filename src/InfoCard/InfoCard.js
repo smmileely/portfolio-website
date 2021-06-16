@@ -7,7 +7,7 @@ const InfoCard = ({ header, data }) => {
     <InfoWrapper>
       <InfoHeader>{header}</InfoHeader>
       {data.map((item, i) => (
-        <InfoContentWrapper key={i}>
+        <InfoContentWrapper key={i} id={item.id}>
           <Lead>{item.lead}</Lead>
           <CompanyDateWrapper>
             <span>{item.company}</span>

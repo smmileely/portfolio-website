@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { COLORS, WEIGHTS } from "../constants";
 import { FaBars } from "react-icons/fa";
+import { Link } from "react-scroll";
 
 const Navbar = ({ toggle }) => {
   return (
@@ -11,11 +12,61 @@ const Navbar = ({ toggle }) => {
           <FaBars />
         </MobileIcon>
         <NavMenu>
-          <NavLink href="/home">Home</NavLink>
-          <NavLink href="/profile">Profile</NavLink>
-          <NavLink href="/skills">Skills</NavLink>
-          <NavLink href="/experience">Experience</NavLink>
-          <NavLink href="/education">Education</NavLink>
+          <NavLink
+            activeClass="active"
+            to="home"
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact="true"
+            offset={-80}
+          >
+            Home
+          </NavLink>
+          <NavLink
+            activeClass="active"
+            to="profile"
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact="true"
+            offset={-80}
+          >
+            Profile
+          </NavLink>
+          <NavLink
+            activeClass="active"
+            to="skills"
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact="true"
+            offset={-80}
+          >
+            Skills
+          </NavLink>
+          <NavLink
+            activeClass="active"
+            to="experience"
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact="true"
+            offset={-80}
+          >
+            Experience
+          </NavLink>
+          <NavLink
+            activeClass="active"
+            to="education"
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact="true"
+            offset={-80}
+          >
+            Education
+          </NavLink>
         </NavMenu>
       </NavbarContainer>
     </Nav>
@@ -71,17 +122,22 @@ const NavMenu = styled.ul`
   }
 `;
 
-const NavLink = styled.a`
+const NavLink = styled(Link)`
   font-size: 1.125rem;
   text-transform: uppercase;
   text-decoration: none;
   color: ${COLORS.secondary};
   font-weight: ${WEIGHTS.medium};
+  cursor: pointer;
 
   &:hover {
     /* text-decoration: revert; */
     font-weight: ${WEIGHTS.bold};
   }
+
+  /* &.active {
+    border-bottom: 3px solid black;
+  } */
 `;
 
 export default Navbar;

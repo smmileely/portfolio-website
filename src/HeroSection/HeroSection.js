@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 import HeroSectionImage from "../images/HeroSectionImage.JPG";
-import { COLORS, WEIGHTS } from "../constants";
+// import { COLORS, WEIGHTS } from "../constants";
 
 const HeroSection = () => {
   return (
-    <HeroContainer>
+    <HeroContainer id="home">
       <HeroBg>
         <ImgBg src={HeroSectionImage} />
       </HeroBg>
@@ -84,8 +84,8 @@ const HeroH1 = styled.h1`
     font-size: 40px;
   }
   @media screen and (max-width: 480 px) {
-    font-size: 32px; */
-  }
+    font-size: 32px;
+  } */
 `;
 
 const HeroP = styled.p`
@@ -99,8 +99,8 @@ const HeroP = styled.p`
     font-size: 24px;
   }
   @media screen and (max-width: 480 px) {
-    font-size: 18px; */
-  }
+    font-size: 18px;
+  } */
 `;
 
 // const HeroContainer = styled.div`

@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { COLORS, WEIGHTS } from "../constants";
 import { FaTimes } from "react-icons/fa";
+import { Link } from "react-scroll";
 
 const Sidebar = ({ isOpen, toggle }) => {
   return (
@@ -11,19 +12,19 @@ const Sidebar = ({ isOpen, toggle }) => {
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLink href="/home" onClick={toggle}>
+          <SidebarLink to="home" onClick={toggle}>
             Home
           </SidebarLink>
-          <SidebarLink href="/profile" onClick={toggle}>
+          <SidebarLink to="profile" onClick={toggle}>
             Profile
           </SidebarLink>
-          <SidebarLink href="/skills" onClick={toggle}>
+          <SidebarLink to="skills" onClick={toggle}>
             Skills
           </SidebarLink>
-          <SidebarLink href="/experience" onClick={toggle}>
+          <SidebarLink to="experience" onClick={toggle}>
             Experience
           </SidebarLink>
-          <SidebarLink href="/education" onClick={toggle}>
+          <SidebarLink to="education" onClick={toggle}>
             Education
           </SidebarLink>
         </SidebarMenu>
@@ -76,7 +77,7 @@ const SidebarMenu = styled.ul`
   gap: 50px;
 `;
 
-const SidebarLink = styled.a`
+const SidebarLink = styled(Link)`
   display: flex;
   align-items: center;
   justify-content: center;

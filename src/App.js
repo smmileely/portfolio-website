@@ -4,6 +4,7 @@ import Sidebar from "./Sidebar";
 import Navbar from "./Navbar";
 import HeroSection from "./HeroSection";
 import Profile from "./Profile";
+import Skills from "./Skills";
 import InfoCard from "./InfoCard";
 import Footer from "./Footer";
 import { ExperienceData, EducationData } from "./data";
@@ -22,6 +23,7 @@ const App = () => {
       <MiddleSection>
         <HeroSection />
         <Profile />
+        <Skills />
         <ContentWrapper>
           <InfoCard header="Experience" data={ExperienceData} />
           <InfoCard header="Education" data={EducationData} />

@@ -1,5 +1,6 @@
 export const ExperienceData = [
   {
+    id: "experience",
     lead: "Quantity Surveyor",
     company: "Rider Levett Bucknall",
     date: "Aug 2019 - June 2021",
@@ -24,6 +25,7 @@ export const ExperienceData = [
 
 export const EducationData = [
   {
+    id: "education",
     lead: "BSc Hons in Project and Facilities Management",
     company: "National University of Singapore",
     date: "Aug 2015 – Jun 2019",

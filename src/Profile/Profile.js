@@ -4,7 +4,7 @@ import { COLORS, WEIGHTS } from "../constants";
 
 const Profile = () => {
   return (
-    <ProfileContainer>
+    <ProfileContainer id="profile">
       <ProfileItems>
         I am a Quantity Surveyor who is currently persuing
       </ProfileItems>
@@ -13,7 +13,7 @@ const Profile = () => {
 };
 
 const ProfileContainer = styled.div`
-  height: auto;
+  height: 500px;
   padding: 50px;
   background: white;
   display: flex;
