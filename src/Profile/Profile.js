@@ -6,7 +6,11 @@ const Profile = () => {
   return (
     <ProfileContainer id="profile">
       <ProfileItems>
-        I am a Quantity Surveyor who is currently persuing
+        Not gradudated from a computer science degree, but slowly found my
+        interest in coding especially during this pandemic season. Started with
+        python and slowly ventured into React, still improving so this portfolio
+        website is my little project to showcase what I have got. I'am excited
+        to fill this site with more projects that I have done!
       </ProfileItems>
     </ProfileContainer>
   );
