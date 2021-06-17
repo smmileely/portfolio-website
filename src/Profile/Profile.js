@@ -5,28 +5,48 @@ import { COLORS, WEIGHTS } from "../constants";
 const Profile = () => {
   return (
     <ProfileContainer id="profile">
-      <ProfileItems>
-        Not gradudated from a computer science degree, but slowly found my
-        interest in coding especially during this pandemic season. Started with
-        python and slowly ventured into React, still improving so this portfolio
-        website is my little project to showcase what I have got. I'am excited
-        to fill this site with more projects that I have done!
-      </ProfileItems>
+      <ProfileContent>
+        <ProfileP>
+          Not gradudated from a computer science degree, but slowly found my
+          interest in coding especially during this pandemic season. I had a lot
+          of fun playing with different tools and definitely struggled too.
+        </ProfileP>
+        <ProfileP>
+          Started with python and slowly ventured into React, still improving so
+          this portfolio website is my little project to showcase what I have
+          got.
+        </ProfileP>
+        <ProfileP>
+          I'am excited to fill this space with more projects that I have done!
+          Stay tuned!
+        </ProfileP>
+      </ProfileContent>
     </ProfileContainer>
   );
 };
 
 const ProfileContainer = styled.div`
-  height: 500px;
+  height: auto;
   padding: 50px;
   background: white;
   display: flex;
   justify-content: center;
+  align-items: flex-start;
+`;
+
+const ProfileContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 55%;
   align-items: center;
 `;
 
-const ProfileItems = styled.p`
-  color: ${COLORS.secondary};
+const ProfileP = styled.p`
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+
+  color: ${COLORS.gray[500]};
   font-weight: ${WEIGHTS.medium};
 `;
 
