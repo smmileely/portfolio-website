@@ -106,7 +106,7 @@ const MobileIcon = styled.div`
     transform: translate(-100%, 60%);
     font-size: 1.5rem;
     cursor: pointer;
-    color: ${COLORS.secondary};
+    color: ${COLORS.gray[900]};
   }
 `;
 
@@ -126,7 +126,7 @@ const NavLink = styled(Link)`
   font-size: 1.125rem;
   text-transform: uppercase;
   text-decoration: none;
-  color: ${COLORS.secondary};
+  color: ${COLORS.gray[700]};
   font-weight: ${WEIGHTS.medium};
   cursor: pointer;
 

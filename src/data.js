@@ -5,7 +5,7 @@ export const ExperienceData = [
     company: "Rider Levett Bucknall",
     date: "Aug 2019 - June 2021",
     descriptions: [
-      "Managed a portfolio of construction developments (Residential/ Commercial)",
+      "Managed a portfolio of construction developments (Residential/ Commercial).",
       "Carried out post-contract administration from contract documentation, valuations and variations to ensure the timely delivery of the project and within the projected budget.",
       "Prepared and presented cost plan to facilitate and fulfil client’s requirement within the agreed budget.",
       "Cultivate strong ties with contractors and clients to negotiate any price differences swiftly and amicably.",

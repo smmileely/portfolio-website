@@ -77,7 +77,7 @@ const SocialIcons = styled.div`
 `;
 
 const SocialIconLink = styled.a`
-  color: ${COLORS.secondary};
+  color: ${COLORS.gray[900]};
   font-size: 24px;
 `;
 

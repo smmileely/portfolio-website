@@ -54,7 +54,7 @@ const SidebarContainer = styled.aside`
 `;
 
 const CloseIcon = styled(FaTimes)`
-  color: ${COLORS.secondary};
+  color: ${COLORS.gray[900]};
 `;
 
 const Icon = styled.div`
@@ -88,7 +88,7 @@ const SidebarLink = styled(Link)`
   font-size: 1.125rem;
   text-transform: uppercase;
   text-decoration: none;
-  color: ${COLORS.secondary};
+  color: ${COLORS.gray[700]};
   font-weight: ${WEIGHTS.medium};
 
   &:hover {

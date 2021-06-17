@@ -29,12 +29,11 @@ const InfoWrapper = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   padding: 32px;
-  background: black;
   width: 55%;
 `;
 
 const InfoHeader = styled.div`
-  color: ${COLORS.primary};
+  color: ${COLORS.gray[900]};
   font-weight: ${WEIGHTS.bold};
   font-size: 32px;
   line-height: 32px;
@@ -50,7 +49,7 @@ const InfoContentWrapper = styled.div`
 `;
 
 const Lead = styled.div`
-  color: ${COLORS.primary};
+  color: ${COLORS.gray[900]};
   font-weight: ${WEIGHTS.medium};
   font-size: 20px;
 `;
@@ -59,7 +58,7 @@ const CompanyDateWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 20px 0px;
-  color: ${COLORS.primary};
+  color: ${COLORS.gray[900]};
   font-weight: ${WEIGHTS.normal};
   font-size: 16px;
 `;
@@ -70,7 +69,7 @@ const DescriptionWrapper = styled.ul`
 `;
 
 const Description = styled.li`
-  color: ${COLORS.primary};
+  color: ${COLORS.gray[500]};
   font-weight: ${WEIGHTS.normal};
   font-size: 16px;
 `;
