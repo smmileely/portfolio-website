@@ -1,10 +1,10 @@
-import React from "react";
-import styled from "styled-components";
-import { COLORS, WEIGHTS } from "../constants";
+import React from 'react';
+import styled from 'styled-components';
+import { COLORS, WEIGHTS } from '../constants';
 
 const Skills = () => {
   return (
-    <SkillContainer id="skills">
+    <SkillContainer id='skills'>
       <SkillContent>
         <SkillHeader>My skills</SkillHeader>
         <SkillP>
@@ -26,12 +26,12 @@ const Skills = () => {
 };
 
 const SkillContainer = styled.div`
-  height: auto;
-  padding: 50px;
-  background: white;
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  /* height: auto;
+  padding: 50px;
+  background: white; */
   border: solid black;
 `;
 
@@ -54,7 +54,7 @@ const SkillHeader = styled.div`
 
 const SkillP = styled.p`
   margin-top: 24px;
-  display: flex;
+  /* display: flex; */
   color: ${COLORS.gray[500]};
   font-weight: ${WEIGHTS.medium};
 `;

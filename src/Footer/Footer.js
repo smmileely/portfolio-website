@@ -1,9 +1,9 @@
-import React from "react";
-import styled from "styled-components";
-import { COLORS } from "../constants";
-import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
-import { FiArrowUpCircle } from "react-icons/fi";
-import { animateScroll as scroll } from "react-scroll";
+import React from 'react';
+import styled from 'styled-components';
+import { COLORS } from '../constants';
+import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
+import { FiArrowUpCircle } from 'react-icons/fi';
+import { animateScroll as scroll } from 'react-scroll';
 
 const Footer = () => {
   const toggleHome = () => {
@@ -19,29 +19,29 @@ const Footer = () => {
           </WebsiteRights>
           <SocialIcons>
             <SocialIconLink
-              href="https://www.linkedin.com/in/wengluyao/"
-              target="_blank"
-              aria-label="Linkedin"
+              href='https://www.linkedin.com/in/wengluyao/'
+              target='_blank'
+              aria-label='Linkedin'
             >
               <FaLinkedin />
             </SocialIconLink>
             <SocialIconLink
-              href="https://github.com/smmileely"
-              target="_blank"
-              aria-label="Github"
+              href='https://github.com/smmileely'
+              target='_blank'
+              aria-label='Github'
             >
               <FaGithub />
             </SocialIconLink>
             <SocialIconLink
-              href="mailto:wengluyao0127@gmail.com"
-              target="_blank"
-              aria-label="Envelope"
+              href='mailto:wengluyao0127@gmail.com'
+              target='_blank'
+              aria-label='Envelope'
             >
               <FaEnvelope />
             </SocialIconLink>
           </SocialIcons>
         </SocialMediaWrap>
-        <ScrollToTop to="home" onClick={toggleHome} />
+        <ScrollToTop onClick={toggleHome} />
       </FooterWrapper>
     </FooterContainer>
   );
