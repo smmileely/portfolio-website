@@ -26,12 +26,11 @@ const Skills = () => {
 };
 
 const SkillContainer = styled.div`
-  height: auto;
-  padding: 50px;
-  background: white;
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  height: auto;
+  padding: 50px;
   border: solid black;
 `;
 
@@ -54,7 +53,6 @@ const SkillHeader = styled.div`
 
 const SkillP = styled.p`
   margin-top: 24px;
-  display: flex;
   color: ${COLORS.gray[500]};
   font-weight: ${WEIGHTS.medium};
 `;
