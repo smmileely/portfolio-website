@@ -7,7 +7,7 @@ import Profile from "./Profile";
 import Skills from "./Skills";
 import InfoCard from "./InfoCard";
 import Footer from "./Footer";
-import { ExperienceData, EducationData } from "./data";
+import { ExperienceData, EducationData, SkillsData } from "./data";
 import { FiArrowUpCircle } from "react-icons/fi";
 import { animateScroll as scroll } from "react-scroll";
 import { COLORS } from "./constants";
@@ -30,7 +30,7 @@ const App = () => {
       <MiddleSection>
         <HeroSection />
         <Profile />
-        <Skills />
+        <Skills header="My Skills" data={SkillsData} />
         <ContentWrapper>
           <InfoCard header="Experience" data={ExperienceData} />
           <InfoCard header="Education" data={EducationData} />

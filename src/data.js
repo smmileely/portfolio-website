@@ -44,3 +44,11 @@ export const EducationData = [
     ],
   },
 ];
+
+export const SkillsData = [
+  {
+    description:
+      "Through my journey of exploring, I've gained a solid understanding of web development concepts, and have dedicated my free time to solidify these concepts.",
+    skills: ["CSS", "JavaScript", "HTML", "React", "Git", "Styled-Components"],
+  },
+];

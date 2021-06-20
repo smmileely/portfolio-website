@@ -2,25 +2,20 @@ import React from "react";
 import styled from "styled-components";
 import { COLORS, WEIGHTS } from "../constants";
 
-const Skills = () => {
+const Skills = ({ header, data }) => {
   return (
     <SkillContainer id="skills">
-      <SkillContent>
-        <SkillHeader>My skills</SkillHeader>
-        <SkillP>
-          Through my journey of exploring, I've gained a solid understanding of
-          web development concepts, and have dedicated my free time to solidify
-          these concepts.
-        </SkillP>
-        <SkillListWrapper>
-          <SkillList>CSS</SkillList>
-          <SkillList>JavaScript</SkillList>
-          <SkillList>HTML</SkillList>
-          <SkillList>React</SkillList>
-          <SkillList>Git</SkillList>
-          <SkillList>Styled-Components</SkillList>
-        </SkillListWrapper>
-      </SkillContent>
+      {data.map((item, i) => (
+        <SkillContent key={i}>
+          <SkillHeader>{header}</SkillHeader>
+          <SkillP>{item.description}</SkillP>
+          <SkillListWrapper>
+            {item.skills.map((skill, i) => (
+              <SkillList key={i}>{skill}</SkillList>
+            ))}
+          </SkillListWrapper>
+        </SkillContent>
+      ))}
     </SkillContainer>
   );
 };
