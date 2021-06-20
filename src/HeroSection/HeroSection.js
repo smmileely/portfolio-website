@@ -6,118 +6,27 @@ import HeroSectionImage from "../images/HeroSectionImage.JPG";
 const HeroSection = () => {
   return (
     <HeroContainer id="home">
-      <HeroBg>
-        <ImgBg src={HeroSectionImage} />
-      </HeroBg>
-      <HeroContent>
-        <HeroH1>Hi there, I'm Lu Yao.</HeroH1>
-        <HeroP>
-          A quantity surveyor who is trying to learn new skills and venture into
-          the world of codes.
-        </HeroP>
-      </HeroContent>
+      <img src={HeroSectionImage} alt="My hero pictre" />
+      <h1>Hi there, I'm Lu Yao.</h1>
+      <h2>
+        A quantity surveyor who is trying to learn new skills and venture into
+        the world of codes.
+      </h2>
     </HeroContainer>
   );
 };
 
-export const HeroContainer = styled.div`
-  background: #0c0c0c;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 30px;
-  height: 800px;
-  position: relative;
-  z-index: 1;
-  border: solid black;
-
-  /* :before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: linear-gradient(
-        180deg,
-        rgba(0, 0, 0, 0.2) 0%,
-        rgba(0, 0, 0, 0.6) 100%
-      ),
-      linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
-    z-index: 2;
-  } */
-`;
-
-const HeroBg = styled.div`
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-`;
-
-const ImgBg = styled.img`
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-`;
-
-const HeroContent = styled.div`
-  z-index: 3;
-  max-width: 1200px;
-  position: absolute;
-  padding: 8px 24px;
+const HeroContainer = styled.div`
+  /* background-image: url("../images/HeroSectionImage.JPG"); */
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-`;
-
-const HeroH1 = styled.h1`
-  color: #fff;
-  font-size: 48px;
   text-align: center;
-
-  /* @media screen and (max-width: 768 px) {
-    font-size: 40px;
-  }
-  @media screen and (max-width: 480 px) {
-    font-size: 32px;
-  } */
+  text-shadow: 0px 0.3em 1em hsl(295deg 100% 10%);
+  background-size: cover;
+  background-position: bottom center;
+  min-height: min(80vh, 500px);
 `;
-
-const HeroP = styled.p`
-  margin-top: 24px;
-  color: #fff;
-  font-size: 24px;
-  text-align: center;
-  max-width: 600px;
-
-  /* @media screen and (max-width: 768 px) {
-    font-size: 24px;
-  }
-  @media screen and (max-width: 480 px) {
-    font-size: 18px;
-  } */
-`;
-
-// const HeroContainer = styled.div`
-//   background-image: url("../images/HeroSectionImage.JPG");
-//   background-size: cover;
-//   background-position: bottom center;
-//   height: 800px;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   position: relative;
-//   z-index: 1; //for other components in Herosection
-// `;
-
-// const HeroContent = styled.div`
-//   display: flex;
-// `;
 
 export default HeroSection;
