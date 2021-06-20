@@ -10,13 +10,13 @@ const Profile = () => {
           Not gradudated from a computer science degree, but slowly found my
           interest in coding especially during this pandemic season. I had a lot
           of fun playing with different tools and definitely struggled too.
-        </ProfileP>
-        <ProfileP>
+          <br />
+          <br />
           Started with python and slowly ventured into React, still improving so
           this portfolio website is my little project to showcase what I have
           got.
-        </ProfileP>
-        <ProfileP>
+          <br />
+          <br />
           I'am excited to fill this space with more projects that I have done!
           Stay tuned!
         </ProfileP>
