@@ -14,17 +14,6 @@ const Navbar = ({ toggle }) => {
         <NavMenu>
           <NavLink
             activeClass="active"
-            to="home"
-            smooth={true}
-            duration={500}
-            spy={true}
-            exact="true"
-            offset={-80}
-          >
-            Home
-          </NavLink>
-          <NavLink
-            activeClass="active"
             to="profile"
             smooth={true}
             duration={500}
