@@ -2,14 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import { COLORS } from "../constants";
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
-import { FiArrowUpCircle } from "react-icons/fi";
-import { animateScroll as scroll } from "react-scroll";
 
 const Footer = () => {
-  const toggleHome = () => {
-    scroll.scrollToTop();
-  };
-
   return (
     <FooterContainer>
       <FooterWrapper>
@@ -41,7 +35,6 @@ const Footer = () => {
             </SocialIconLink>
           </SocialIcons>
         </SocialMediaWrap>
-        <ScrollToTop to="home" onClick={toggleHome} />
       </FooterWrapper>
     </FooterContainer>
   );
@@ -87,12 +80,6 @@ const SocialIcons = styled.div`
 const SocialIconLink = styled.a`
   color: ${COLORS.gray[900]};
   font-size: 24px;
-`;
-
-const ScrollToTop = styled(FiArrowUpCircle)`
-  color: ${COLORS.gray[900]};
-  font-size: 35px;
-  cursor: pointer;
 `;
 
 export default Footer;
