@@ -17,7 +17,6 @@ const HeroSection = () => {
 };
 
 const HeroContainer = styled.div`
-  /* background-image: url("../images/HeroSectionImage.JPG"); */
   display: flex;
   flex-direction: column;
   justify-content: center;
