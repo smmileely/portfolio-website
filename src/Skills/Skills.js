@@ -55,7 +55,7 @@ const SkillP = styled.p`
 const SkillListWrapper = styled.ul`
   margin-top: 24px;
   text-align: justify;
-  list-style: square;
+  list-style: circle;
   display: flex;
   gap: 80px;
 `;
