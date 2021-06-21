@@ -41,7 +41,7 @@ const Footer = () => {
 };
 
 const FooterContainer = styled.footer`
-  background: ${COLORS.gray[100]};
+  background: ${COLORS.secondary};
 `;
 
 const FooterWrapper = styled.div`
