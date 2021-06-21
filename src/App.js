@@ -72,6 +72,10 @@ const ScrollToTop = styled(FiArrowUpCircle)`
   &:hover {
     color: ${COLORS.gray[700]};
   }
+
+  &:active {
+    color: ${COLORS.primary};
+  }
 `;
 
 export default App;
