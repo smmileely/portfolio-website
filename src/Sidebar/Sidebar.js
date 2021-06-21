@@ -36,12 +36,12 @@ const SidebarContainer = styled.aside`
   @media screen and (max-width: 768px) {
     position: fixed;
     z-index: 999; //above everything
-    width: 100%;
-    height: 100%;
-    background: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 100%;
+    background: white;
     top: 0;
     left: 0;
     transition: 0.3s ease-in-out;
@@ -89,7 +89,6 @@ const SidebarLink = styled(Link)`
   font-weight: ${WEIGHTS.medium};
 
   &:hover {
-    /* text-decoration: revert; */
     font-weight: ${WEIGHTS.bold};
     transition: 0.2s ease-in-out;
   }
