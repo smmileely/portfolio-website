@@ -6,6 +6,7 @@ const Profile = () => {
   return (
     <ProfileContainer id="profile">
       <ProfileContent>
+        <ProfileHeader>About Me</ProfileHeader>
         <ProfileP>
           Not graduated from a computer science degree, but slowly found my
           interest in coding especially during this pandemic season. I had a lot
@@ -29,9 +30,7 @@ const ProfileContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  height: auto;
-  padding: 50px;
-  background: white;
+  padding-top: 80px;
 `;
 
 const ProfileContent = styled.div`
@@ -41,6 +40,15 @@ const ProfileContent = styled.div`
   width: 55%;
 `;
 
+const ProfileHeader = styled.div`
+  align-self: center;
+  color: ${COLORS.gray[900]};
+  font-weight: ${WEIGHTS.bold};
+  font-size: 32px;
+  line-height: 32px;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+`;
 const ProfileP = styled.p`
   text-align: center;
   margin-top: 24px;
