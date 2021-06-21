@@ -7,8 +7,8 @@ export const COLORS = {
     700: "hsl(220deg, 5%, 40%)",
     900: "hsl(220deg, 3%, 20%)",
   },
-  primary: "hsl(340deg, 65%, 47%)",
-  secondary: "hsl(240deg, 60%, 63%)",
+  primary: "rgb(232,160,167)",
+  secondary: "rgba(214,210,232, 0.4)",
 };
 
 export const WEIGHTS = {
