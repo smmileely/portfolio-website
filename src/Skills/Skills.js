@@ -63,6 +63,11 @@ const SkillList = styled.li`
   color: ${COLORS.gray[900]};
   font-weight: ${WEIGHTS.normal};
   font-size: 16px;
+
+  ::marker {
+    color: ${COLORS.primary};
+    font-size: 1.2rem;
+  }
 `;
 
 export default Skills;
