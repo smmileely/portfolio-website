@@ -8,12 +8,19 @@ import Skills from './Skills';
 import InfoCard from './InfoCard';
 import Footer from './Footer';
 import { ExperienceData, EducationData } from './data';
+import { FiArrowUpCircle } from 'react-icons/fi';
+import { COLORS } from './constants';
+import { animateScroll as scroll } from 'react-scroll';
 
 const App = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => {
     setIsOpen(!isOpen);
+  };
+
+  const toggleHome = () => {
+    scroll.scrollToTop();
   };
 
   return (
@@ -29,6 +36,7 @@ const App = () => {
           <InfoCard header='Education' data={EducationData} />
         </ContentWrapper>
       </MiddleSection>
+      <ScrollToTop onClick={toggleHome} />
       <Footer />
     </Wrapper>
   );
@@ -51,6 +59,15 @@ const ContentWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+`;
+
+const ScrollToTop = styled(FiArrowUpCircle)`
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: ${COLORS.gray[900]};
+  font-size: 42px;
+  cursor: pointer;
 `;
 
 export default App;
