@@ -7,8 +7,8 @@ const HeroSection = () => {
   return (
     <HeroContainer id="home">
       <img src={HeroSectionImage} alt="My hero pictre" />
-      <h1>Hi there, I'm Lu Yao.</h1>
-      <h2>
+      <h1 style={{ fontSize: "2.5rem" }}>Hi there, I'm Lu Yao.</h1>
+      <h2 style={{ fontSize: "1.5rem" }}>
         A quantity surveyor who is trying to learn new skills and venture into
         the world of codes.
       </h2>
