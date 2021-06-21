@@ -7,79 +7,77 @@ const Footer = () => {
   return (
     <FooterContainer>
       <FooterWrapper>
-        <SocialMediaWrap>
-          <WebsiteRights>
-            © {new Date().getFullYear()} - Weng Lu Yao
-          </WebsiteRights>
-          <SocialIcons>
-            <SocialIconLink
-              href="https://www.linkedin.com/in/wengluyao/"
-              target="_blank"
-              aria-label="Linkedin"
-            >
-              <FaLinkedin />
-            </SocialIconLink>
-            <SocialIconLink
-              href="https://github.com/smmileely"
-              target="_blank"
-              aria-label="Github"
-            >
-              <FaGithub />
-            </SocialIconLink>
-            <SocialIconLink
-              href="mailto:wengluyao0127@gmail.com"
-              target="_blank"
-              aria-label="Envelope"
-            >
-              <FaEnvelope />
-            </SocialIconLink>
-          </SocialIcons>
-        </SocialMediaWrap>
+        <SocialIcons>
+          <SocialIconLink
+            href="https://www.linkedin.com/in/wengluyao/"
+            target="_blank"
+            aria-label="Linkedin"
+          >
+            <FaLinkedin /> https://www.linkedin.com/in/wengluyao/
+          </SocialIconLink>
+          <SocialIconLink
+            href="https://github.com/smmileely"
+            target="_blank"
+            aria-label="Github"
+          >
+            <FaGithub /> https://github.com/smmileely
+          </SocialIconLink>
+          <SocialIconLink
+            href="mailto:wengluyao0127@gmail.com"
+            target="_blank"
+            aria-label="Envelope"
+          >
+            <FaEnvelope /> wengluyao0127@gmail.com
+          </SocialIconLink>
+        </SocialIcons>
       </FooterWrapper>
+      <WebsiteRights>© {new Date().getFullYear()} - Weng Lu Yao</WebsiteRights>
     </FooterContainer>
   );
 };
 
 const FooterContainer = styled.footer`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background: ${COLORS.secondary};
 `;
 
 const FooterWrapper = styled.div`
   display: flex;
-  align-items: flex-end;
-  height: 300px;
-  padding: 48px 0px;
-  max-width: 1100px;
-  margin: 0 auto;
-`;
-
-const SocialMediaWrap = styled.div`
-  display: flex;
+  flex-direction: column;
   align-items: center;
-  margin: 40px auto 0 auto;
-  gap: 700px;
-
-  @media screen and (max-width: 830px) {
-    flex-direction: column;
-  }
+  justify-content: center;
+  width: 55%;
+  height: 360px;
 `;
 
 const WebsiteRights = styled.small`
+  align-self: flex-start;
+  margin-bottom: 20px;
+  margin-left: 20px;
   color: ${COLORS.gray[900]};
   font-size: 18px;
-  margin-bottom: -4px;
 `;
 
 const SocialIcons = styled.div`
   display: flex;
-  justify-content: space-between;
-  width: 100px;
-  margin-bottom: -10px;
+  flex-direction: column;
+  gap: 10px;
 `;
 
 const SocialIconLink = styled.a`
   color: ${COLORS.gray[900]};
-  font-size: 24px;
+  font-size: 23px;
+
+  &:hover {
+    color: ${COLORS.gray[700]};
+  }
+
+  &:active {
+    color: ${COLORS.primary};
+  }
 `;
 
 export default Footer;
