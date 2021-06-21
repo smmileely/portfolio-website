@@ -13,8 +13,8 @@ const Profile = () => {
           <br />
           <br />
           Started with python and slowly ventured into React, still improving so
-          this portfolio website is my little project to showcase what I have
-          got.
+          this portfolio website is my little project to showcase what I learnt
+          so far.
           <br />
           <br />
           I'am excited to fill this space with more projects that I have done!
