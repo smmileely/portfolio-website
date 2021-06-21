@@ -26,24 +26,23 @@ const SkillContainer = styled.div`
   align-items: flex-start;
   height: auto;
   padding: 50px;
-  border: solid black;
 `;
 
 const SkillContent = styled.div`
   display: flex;
   flex-direction: column;
-  width: 55%;
   align-items: center;
+  width: 55%;
 `;
 
 const SkillHeader = styled.div`
+  align-self: center;
   color: ${COLORS.gray[900]};
   font-weight: ${WEIGHTS.bold};
   font-size: 32px;
   line-height: 32px;
   letter-spacing: 1.4px;
   text-transform: uppercase;
-  align-self: center;
 `;
 
 const SkillP = styled.p`
@@ -53,10 +52,10 @@ const SkillP = styled.p`
 `;
 
 const SkillListWrapper = styled.ul`
-  margin-top: 24px;
+  display: flex;
   text-align: justify;
   list-style: circle;
-  display: flex;
+  margin-top: 24px;
   gap: 80px;
 `;
 
