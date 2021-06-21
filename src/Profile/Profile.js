@@ -26,26 +26,23 @@ const Profile = () => {
 };
 
 const ProfileContainer = styled.div`
-  height: auto;
-  padding: 50px;
-  background: white;
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  height: auto;
+  padding: 50px;
+  background: white;
 `;
 
 const ProfileContent = styled.div`
   display: flex;
   flex-direction: column;
-  width: 55%;
   align-items: center;
+  width: 55%;
 `;
 
 const ProfileP = styled.p`
   margin-top: 24px;
-  display: flex;
-  flex-direction: column;
-
   color: ${COLORS.gray[500]};
   font-weight: ${WEIGHTS.medium};
 `;
