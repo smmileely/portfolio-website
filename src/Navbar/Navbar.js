@@ -63,12 +63,12 @@ const Navbar = ({ toggle }) => {
 };
 
 const Nav = styled.nav`
-  background: white;
-  height: 80px;
+  position: sticky;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  position: sticky;
+  background: white;
+  height: 80px;
 
   @media (max-width: 960px) {
     transition: 0.8s all ease;
@@ -88,8 +88,8 @@ const MobileIcon = styled.div`
   display: none;
 
   @media screen and (max-width: 768px) {
-    display: flex;
     position: absolute;
+    display: flex;
     top: 10px;
     right: 0;
     transform: translate(-100%, 60%);
@@ -120,13 +120,8 @@ const NavLink = styled(Link)`
   cursor: pointer;
 
   &:hover {
-    /* text-decoration: revert; */
     font-weight: ${WEIGHTS.bold};
   }
-
-  /* &.active {
-    border-bottom: 3px solid black;
-  } */
 `;
 
 export default Navbar;
