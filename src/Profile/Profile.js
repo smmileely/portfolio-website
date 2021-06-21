@@ -7,7 +7,7 @@ const Profile = () => {
     <ProfileContainer id="profile">
       <ProfileContent>
         <ProfileP>
-          Not gradudated from a computer science degree, but slowly found my
+          Not graduated from a computer science degree, but slowly found my
           interest in coding especially during this pandemic season. I had a lot
           of fun playing with different tools and definitely struggled too.
           <br />
