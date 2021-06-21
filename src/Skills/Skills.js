@@ -24,7 +24,6 @@ const SkillContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  height: auto;
   padding: 50px;
 `;
 
