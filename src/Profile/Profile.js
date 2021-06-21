@@ -17,8 +17,8 @@ const Profile = () => {
           so far.
           <br />
           <br />
-          I'am excited to fill this space with more projects that I have done!
-          Stay tuned!
+          I'am excited to fill this space with more projects that I have learnt
+          so far! Stay tuned!
         </ProfileP>
       </ProfileContent>
     </ProfileContainer>
@@ -42,6 +42,7 @@ const ProfileContent = styled.div`
 `;
 
 const ProfileP = styled.p`
+  text-align: center;
   margin-top: 24px;
   color: ${COLORS.gray[500]};
   font-weight: ${WEIGHTS.medium};
