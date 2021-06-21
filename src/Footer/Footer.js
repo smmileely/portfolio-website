@@ -45,10 +45,10 @@ const FooterContainer = styled.footer`
 `;
 
 const FooterWrapper = styled.div`
-  height: 300px;
-  padding: 48px 0px;
   display: flex;
   align-items: flex-end;
+  height: 300px;
+  padding: 48px 0px;
   max-width: 1100px;
   margin: 0 auto;
 `;
