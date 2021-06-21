@@ -33,13 +33,13 @@ const InfoWrapper = styled.div`
 `;
 
 const InfoHeader = styled.div`
+  align-self: center;
   color: ${COLORS.gray[900]};
   font-weight: ${WEIGHTS.bold};
   font-size: 32px;
   line-height: 32px;
   letter-spacing: 1.4px;
   text-transform: uppercase;
-  align-self: center;
 `;
 
 const InfoContentWrapper = styled.div`
