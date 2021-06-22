@@ -33,7 +33,7 @@ const Sidebar = ({ isOpen, toggle }) => {
 const SidebarContainer = styled.aside`
   display: none;
 
-  @media screen and (max-width: 768px) {
+  @media (max-width: 768px) {
     position: fixed;
     z-index: 999; //above everything
     display: flex;

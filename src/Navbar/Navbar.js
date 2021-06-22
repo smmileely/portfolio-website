@@ -87,7 +87,7 @@ const NavbarContainer = styled.div`
 const MobileIcon = styled.div`
   display: none;
 
-  @media screen and (max-width: 768px) {
+  @media (max-width: 768px) {
     position: absolute;
     display: flex;
     top: 10px;
@@ -106,7 +106,7 @@ const NavMenu = styled.ul`
   text-align: center;
   gap: 48px;
 
-  @media screen and (max-width: 768px) {
+  @media (max-width: 768px) {
     display: none;
   }
 `;
