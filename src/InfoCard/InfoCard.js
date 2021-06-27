@@ -71,7 +71,7 @@ const CompanyDateWrapper = styled.div`
 
 const DescriptionWrapper = styled.ul`
   text-align: justify;
-  list-style: square;
+  list-style: circle;
 `;
 
 const Description = styled.li`
