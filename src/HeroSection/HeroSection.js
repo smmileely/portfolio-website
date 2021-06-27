@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import { COLORS } from "../constants";
+import { COLORS, FONTS } from "../constants";
 
 const HeroSection = () => {
   return (
@@ -39,7 +39,7 @@ const HeroContainer = styled.div`
 `;
 
 const HeroH1 = styled.h1`
-  font-size: 2.5rem;
+  font-size: ${FONTS.xxlarge};
 `;
 
 export default HeroSection;

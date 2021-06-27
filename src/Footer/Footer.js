@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 
-import { COLORS } from "../constants";
+import { COLORS, FONTS } from "../constants";
 
 const Footer = () => {
   return (
@@ -63,7 +63,7 @@ const SocialIconLink = styled.a`
   width: fit-content;
 
   color: ${COLORS.gray[900]};
-  font-size: 16px;
+  font-size: ${FONTS.small};
   text-decoration: none;
 
   &:hover {
@@ -77,7 +77,7 @@ const WebsiteRights = styled.small`
   left: 20px;
 
   color: ${COLORS.gray[900]};
-  font-size: 18px;
+  font-size: ${FONTS.small};
 `;
 
 export default Footer;
