@@ -36,8 +36,8 @@ const App = () => {
           <InfoCard header="Education" data={EducationData} />
         </ContentWrapper>
       </MiddleSection>
-      <ScrollToTop onClick={toggleHome} />
       <Footer />
+      <ScrollToTop onClick={toggleHome} />
     </Wrapper>
   );
 };
@@ -46,7 +46,7 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   height: 100vh;
-  width: 100vw;
+  /* width: 100vw; */
 `;
 
 const MiddleSection = styled.div`
@@ -73,10 +73,6 @@ const ScrollToTop = styled(FiArrowUpCircle)`
 
   &:hover {
     color: ${COLORS.gray[900]};
-  }
-
-  &:active {
-    color: ${COLORS.primary};
   }
 `;
 

@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import { COLORS } from "../constants";
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
+
+import { COLORS } from "../constants";
 
 const Footer = () => {
   return (
@@ -13,21 +14,21 @@ const Footer = () => {
             target="_blank"
             aria-label="Linkedin"
           >
-            <FaLinkedin /> https://www.linkedin.com/in/wengluyao/
+            <FaLinkedin size={20} /> https://www.linkedin.com/in/wengluyao
           </SocialIconLink>
           <SocialIconLink
             href="https://github.com/smmileely"
             target="_blank"
             aria-label="Github"
           >
-            <FaGithub /> https://github.com/smmileely
+            <FaGithub size={20} /> https://github.com/smmileely
           </SocialIconLink>
           <SocialIconLink
             href="mailto:wengluyao0127@gmail.com"
             target="_blank"
             aria-label="Envelope"
           >
-            <FaEnvelope /> wengluyao0127@gmail.com
+            <FaEnvelope size={20} /> wengluyao0127@gmail.com
           </SocialIconLink>
         </SocialIcons>
       </FooterWrapper>
@@ -37,28 +38,16 @@ const Footer = () => {
 };
 
 const FooterContainer = styled.footer`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  position: relative;
+  padding: 60px 20px;
+
   background: ${COLORS.secondary};
 `;
 
 const FooterWrapper = styled.div`
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 55%;
-  height: 360px;
-`;
-
-const WebsiteRights = styled.small`
-  align-self: flex-start;
-  margin-bottom: 20px;
-  margin-left: 20px;
-  color: ${COLORS.gray[900]};
-  font-size: 18px;
 `;
 
 const SocialIcons = styled.div`
@@ -68,16 +57,26 @@ const SocialIcons = styled.div`
 `;
 
 const SocialIconLink = styled.a`
+  display: flex;
+  gap: 10px;
+  width: fit-content;
+
   color: ${COLORS.gray[900]};
-  font-size: 23px;
+  font-size: 16px;
+  text-decoration: none;
 
   &:hover {
     color: ${COLORS.gray[700]};
   }
+`;
 
-  &:active {
-    color: ${COLORS.primary};
-  }
+const WebsiteRights = styled.small`
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+
+  color: ${COLORS.gray[900]};
+  font-size: 18px;
 `;
 
 export default Footer;
