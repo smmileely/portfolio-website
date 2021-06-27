@@ -57,7 +57,7 @@ const ProfileP = styled.p`
   margin-top: 24px;
 
   text-align: center;
-  color: ${COLORS.gray[500]};
+  color: ${COLORS.gray[700]};
   font-weight: ${WEIGHTS.medium};
 `;
 

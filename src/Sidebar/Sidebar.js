@@ -97,7 +97,7 @@ const SidebarLink = styled(Link)`
   font-weight: ${WEIGHTS.medium};
 
   &:hover {
-    font-weight: ${WEIGHTS.bold};
+    color: ${COLORS.primary};
     transition: 0.2s ease-in-out;
   }
 `;

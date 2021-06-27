@@ -46,10 +46,10 @@ const App = () => {
 
 const Wrapper = styled.div`
   height: 100vh;
+  /* width: 100vw; */
 
   display: flex;
   flex-direction: column;
-  /* width: 100vw; */
 `;
 
 const MiddleSection = styled.div`
@@ -76,7 +76,7 @@ const ScrollToTop = styled(FiArrowUpCircle)`
   cursor: pointer;
 
   &:hover {
-    color: ${COLORS.gray[900]};
+    color: ${COLORS.primary};
   }
 `;
 

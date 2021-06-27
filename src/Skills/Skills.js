@@ -51,7 +51,7 @@ const SkillHeader = styled.div`
 const SkillP = styled.p`
   margin-top: 24px;
 
-  color: ${COLORS.gray[500]};
+  color: ${COLORS.gray[700]};
   font-weight: ${WEIGHTS.medium};
 `;
 
@@ -62,7 +62,6 @@ const SkillListWrapper = styled.ul`
   gap: 80px;
 
   text-align: justify;
-  /* word-wrap: initial; */
   list-style: circle;
 `;
 

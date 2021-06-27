@@ -75,9 +75,14 @@ const DescriptionWrapper = styled.ul`
 `;
 
 const Description = styled.li`
-  color: ${COLORS.gray[500]};
+  color: ${COLORS.gray[700]};
   font-weight: ${WEIGHTS.normal};
   font-size: 16px;
+
+  ::marker {
+    color: ${COLORS.primary};
+    font-size: 1.2rem;
+  }
 `;
 
 export default InfoCard;

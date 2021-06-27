@@ -138,7 +138,7 @@ const NavLink = styled(Link)`
   cursor: pointer;
 
   &:hover {
-    font-weight: ${WEIGHTS.bold};
+    color: ${COLORS.primary};
   }
 `;
 

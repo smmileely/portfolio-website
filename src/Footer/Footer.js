@@ -67,7 +67,7 @@ const SocialIconLink = styled.a`
   text-decoration: none;
 
   &:hover {
-    color: ${COLORS.gray[700]};
+    color: ${COLORS.primary};
   }
 `;
 

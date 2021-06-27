@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 import HeroSectionImage from "../images/HeroSectionImage.JPG";
 
-import { COLORS, WEIGHTS } from "../constants";
+import { COLORS } from "../constants";
 
 const HeroSection = () => {
   return (
@@ -20,6 +20,8 @@ const HeroSection = () => {
 
 const HeroContainer = styled.div`
   min-height: min(80vh, 500px);
+  background-size: cover;
+  background-position: bottom center;
 
   display: flex;
   flex-direction: column;
@@ -27,10 +29,14 @@ const HeroContainer = styled.div`
   align-items: center;
 
   text-align: center;
-  text-shadow: 0px 0.3em 1em hsl(295deg 100% 10%);
-  /* color: ${COLORS.primary}; */
-  background-size: cover;
-  background-position: bottom center;
+  /* text-shadow: 0px 0.3em 1em ${COLORS.primary}; */
+  background: -webkit-linear-gradient(
+    0deg,
+    ${COLORS.gray[900]},
+    ${COLORS.gray[100]}
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 `;
 
 const HeroH1 = styled.h1`
