@@ -28,7 +28,7 @@ const Profile = () => {
 };
 
 const ProfileContainer = styled.div`
-  padding-top: 80px;
+  padding: 32px 0px;
 
   display: flex;
   justify-content: center;

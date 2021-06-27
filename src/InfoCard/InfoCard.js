@@ -26,7 +26,7 @@ const InfoCard = ({ header, data }) => {
 };
 
 const InfoWrapper = styled.div`
-  padding: 32px;
+  padding: 32px 0px;
   width: 55%;
 
   display: flex;
