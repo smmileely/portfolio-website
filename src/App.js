@@ -46,12 +46,14 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   height: 100vh;
+  width: 100vw;
 `;
 
 const MiddleSection = styled.div`
   display: flex;
   flex-direction: column;
   flex: 1;
+  /* overflow: hidden; */
 `;
 
 const ContentWrapper = styled.div`
@@ -65,12 +67,12 @@ const ScrollToTop = styled(FiArrowUpCircle)`
   position: fixed;
   bottom: 20px;
   right: 20px;
-  color: ${COLORS.gray[900]};
+  color: ${COLORS.gray[700]};
   font-size: 42px;
   cursor: pointer;
 
   &:hover {
-    color: ${COLORS.gray[700]};
+    color: ${COLORS.gray[900]};
   }
 
   &:active {
