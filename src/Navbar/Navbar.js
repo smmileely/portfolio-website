@@ -75,22 +75,16 @@ const Navbar = ({ toggle }) => {
 };
 
 const Nav = styled.nav`
-  position: sticky;
   height: 80px;
 
   display: flex;
-  align-items: center;
   justify-content: flex-end;
+  align-items: center;
 
-  background: white;
-
-  @media (max-width: 960px) {
-    transition: 0.8s all ease;
-  }
+  border-bottom: 1px solid ${COLORS.gray[300]};
 `;
 
 const NavbarContainer = styled.div`
-  height: 80px;
   padding: 20px 40px;
   max-width: 1100px;
 
