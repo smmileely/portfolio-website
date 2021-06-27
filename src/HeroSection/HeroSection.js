@@ -1,8 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 
-// import HeroSectionImage from "/assets/HeroSectionImage.JPG";
-
 import { COLORS, FONTS } from "../constants";
 
 const HeroSection = () => {
