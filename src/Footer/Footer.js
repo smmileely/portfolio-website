@@ -6,7 +6,7 @@ import { COLORS } from "../constants";
 
 const Footer = () => {
   return (
-    <FooterContainer>
+    <FooterContainer id="contacts">
       <FooterWrapper>
         <SocialIcons>
           <SocialIconLink

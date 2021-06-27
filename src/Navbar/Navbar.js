@@ -57,6 +57,17 @@ const Navbar = ({ toggle }) => {
           >
             Education
           </NavLink>
+          <NavLink
+            activeClass="active"
+            to="contacts"
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact="true"
+            offset={-80}
+          >
+            Contacts
+          </NavLink>
         </NavMenu>
       </NavbarContainer>
     </Nav>
