@@ -1,14 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 
-import HeroSectionImage from "../images/HeroSectionImage.JPG";
-
 import { COLORS } from "../constants";
 
 const HeroSection = () => {
   return (
     <HeroContainer id="home">
-      <img src={HeroSectionImage} alt="My hero pictre" />
+      <img src="/assets/HeroSectionImage.JPG" alt="My hero picture" />
       <HeroH1>Hi there, I'm Lu Yao.</HeroH1>
       <h2 style={{ fontSize: "1.5rem" }}>
         A quantity surveyor who is trying to learn new skills and venture into
@@ -22,6 +20,8 @@ const HeroContainer = styled.div`
   min-height: min(80vh, 500px);
   background-size: cover;
   background-position: bottom center;
+  padding-top: 20px;
+  padding-bottom: 32px;
 
   display: flex;
   flex-direction: column;
@@ -40,8 +40,6 @@ const HeroContainer = styled.div`
 `;
 
 const HeroH1 = styled.h1`
-  padding-top: 26px;
-
   font-size: 2.5rem;
 `;
 
