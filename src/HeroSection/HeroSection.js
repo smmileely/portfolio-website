@@ -29,7 +29,6 @@ const HeroContainer = styled.div`
   align-items: center;
 
   text-align: center;
-  /* text-shadow: 0px 0.3em 1em ${COLORS.primary}; */
   background: -webkit-linear-gradient(
     0deg,
     ${COLORS.gray[900]},
