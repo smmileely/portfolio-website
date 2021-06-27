@@ -1,8 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import { COLORS, WEIGHTS } from "../constants";
 import { FaBars } from "react-icons/fa";
 import { Link } from "react-scroll";
+
+import { COLORS, WEIGHTS } from "../constants";
 
 const Navbar = ({ toggle }) => {
   return (
@@ -64,11 +65,13 @@ const Navbar = ({ toggle }) => {
 
 const Nav = styled.nav`
   position: sticky;
+  height: 80px;
+
   display: flex;
   align-items: center;
   justify-content: flex-end;
+
   background: white;
-  height: 80px;
 
   @media (max-width: 960px) {
     transition: 0.8s all ease;
@@ -76,12 +79,13 @@ const Nav = styled.nav`
 `;
 
 const NavbarContainer = styled.div`
-  display: flex;
-  align-items: center;
   height: 80px;
   padding: 20px 40px;
-  gap: 48px;
   max-width: 1100px;
+
+  display: flex;
+  align-items: center;
+  gap: 48px;
 `;
 
 const MobileIcon = styled.div`
@@ -89,9 +93,11 @@ const MobileIcon = styled.div`
 
   @media (max-width: 768px) {
     position: absolute;
-    display: flex;
     top: 10px;
     right: 0;
+
+    display: flex;
+
     transform: translate(-100%, 60%);
     font-size: 1.5rem;
     cursor: pointer;
@@ -102,9 +108,10 @@ const MobileIcon = styled.div`
 const NavMenu = styled.ul`
   display: flex;
   align-items: center;
+  gap: 48px;
+
   list-style: none;
   text-align: center;
-  gap: 48px;
 
   @media (max-width: 768px) {
     display: none;

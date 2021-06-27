@@ -46,8 +46,8 @@ const FooterContainer = styled.footer`
 
 const FooterWrapper = styled.div`
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 `;
 
 const SocialIcons = styled.div`
@@ -59,6 +59,7 @@ const SocialIcons = styled.div`
 const SocialIconLink = styled.a`
   display: flex;
   gap: 10px;
+
   width: fit-content;
 
   color: ${COLORS.gray[900]};

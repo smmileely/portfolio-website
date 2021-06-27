@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+
 import { COLORS, WEIGHTS } from "../constants";
 
 const Profile = () => {
@@ -27,21 +28,24 @@ const Profile = () => {
 };
 
 const ProfileContainer = styled.div`
+  padding-top: 80px;
+
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding-top: 80px;
 `;
 
 const ProfileContent = styled.div`
+  width: 55%;
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 55%;
 `;
 
 const ProfileHeader = styled.div`
   align-self: center;
+
   color: ${COLORS.gray[900]};
   font-weight: ${WEIGHTS.bold};
   font-size: 32px;
@@ -50,8 +54,9 @@ const ProfileHeader = styled.div`
   text-transform: uppercase;
 `;
 const ProfileP = styled.p`
-  text-align: center;
   margin-top: 24px;
+
+  text-align: center;
   color: ${COLORS.gray[500]};
   font-weight: ${WEIGHTS.medium};
 `;

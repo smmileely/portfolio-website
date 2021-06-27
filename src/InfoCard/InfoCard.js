@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+
 import { COLORS, WEIGHTS } from "../constants";
 
 const InfoCard = ({ header, data }) => {
@@ -25,15 +26,17 @@ const InfoCard = ({ header, data }) => {
 };
 
 const InfoWrapper = styled.div`
+  padding: 32px;
+  width: 55%;
+
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 32px;
-  width: 55%;
 `;
 
 const InfoHeader = styled.div`
   align-self: center;
+
   color: ${COLORS.gray[900]};
   font-weight: ${WEIGHTS.bold};
   font-size: 32px;
@@ -43,9 +46,10 @@ const InfoHeader = styled.div`
 `;
 
 const InfoContentWrapper = styled.div`
+  margin: 20px 0px;
+
   display: flex;
   flex-direction: column;
-  margin: 20px 0px;
 `;
 
 const Lead = styled.div`
@@ -55,9 +59,11 @@ const Lead = styled.div`
 `;
 
 const CompanyDateWrapper = styled.div`
+  padding: 20px 0px;
+
   display: flex;
   justify-content: space-between;
-  padding: 20px 0px;
+
   color: ${COLORS.gray[900]};
   font-weight: ${WEIGHTS.normal};
   font-size: 16px;

@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+
 import { COLORS, WEIGHTS } from "../constants";
 
 const Skills = ({ header, data }) => {
@@ -21,21 +22,24 @@ const Skills = ({ header, data }) => {
 };
 
 const SkillContainer = styled.div`
+  padding: 50px;
+
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding: 50px;
 `;
 
 const SkillContent = styled.div`
+  width: 55%;
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 55%;
 `;
 
 const SkillHeader = styled.div`
   align-self: center;
+
   color: ${COLORS.gray[900]};
   font-weight: ${WEIGHTS.bold};
   font-size: 32px;
@@ -46,17 +50,20 @@ const SkillHeader = styled.div`
 
 const SkillP = styled.p`
   margin-top: 24px;
+
   color: ${COLORS.gray[500]};
   font-weight: ${WEIGHTS.medium};
 `;
 
 const SkillListWrapper = styled.ul`
+  margin-top: 24px;
+
   display: flex;
+  gap: 80px;
+
   text-align: justify;
   /* word-wrap: initial; */
   list-style: circle;
-  margin-top: 24px;
-  gap: 80px;
 `;
 
 const SkillList = styled.li`

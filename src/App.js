@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import { FiArrowUpCircle } from "react-icons/fi";
+import { animateScroll as scroll } from "react-scroll";
+
 import Sidebar from "./Sidebar";
 import Navbar from "./Navbar";
 import HeroSection from "./HeroSection";
@@ -8,8 +11,7 @@ import Skills from "./Skills";
 import InfoCard from "./InfoCard";
 import Footer from "./Footer";
 import { ExperienceData, EducationData, SkillsData } from "./data";
-import { FiArrowUpCircle } from "react-icons/fi";
-import { animateScroll as scroll } from "react-scroll";
+
 import { COLORS } from "./constants";
 
 const App = () => {
@@ -43,9 +45,10 @@ const App = () => {
 };
 
 const Wrapper = styled.div`
+  height: 100vh;
+
   display: flex;
   flex-direction: column;
-  height: 100vh;
   /* width: 100vw; */
 `;
 
@@ -67,6 +70,7 @@ const ScrollToTop = styled(FiArrowUpCircle)`
   position: fixed;
   bottom: 20px;
   right: 20px;
+
   color: ${COLORS.gray[700]};
   font-size: 42px;
   cursor: pointer;
