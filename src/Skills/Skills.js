@@ -22,7 +22,7 @@ const Skills = ({ header, data }) => {
 };
 
 const SkillContainer = styled.div`
-  padding: 50px;
+  padding: 32px 0px;
 
   display: flex;
   justify-content: center;
