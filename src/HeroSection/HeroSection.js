@@ -8,10 +8,10 @@ const HeroSection = () => {
     <HeroContainer id="home">
       <img src="/assets/HeroSectionImage.JPG" alt="My hero picture" />
       <HeroH1>Hi there, I'm Lu Yao.</HeroH1>
-      <h2 style={{ fontSize: "1.5rem" }}>
+      <HeroH2>
         A quantity surveyor who is trying to learn new skills and venture into
         the world of codes.
-      </h2>
+      </HeroH2>
     </HeroContainer>
   );
 };
@@ -40,6 +40,10 @@ const HeroContainer = styled.div`
 
 const HeroH1 = styled.h1`
   font-size: ${FONTS.xxlarge};
+`;
+
+const HeroH2 = styled.h2`
+  font-size: ${FONTS.medium};
 `;
 
 export default HeroSection;
