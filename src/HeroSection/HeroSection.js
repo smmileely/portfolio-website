@@ -1,12 +1,15 @@
 import React from "react";
 import styled from "styled-components";
 
+// import HeroSectionImage from "/assets/HeroSectionImage.JPG";
+
 import { COLORS, FONTS } from "../constants";
 
 const HeroSection = () => {
   return (
     <HeroContainer id="home">
-      <img src="/assets/HeroSectionImage.JPG" alt="My hero picture" />
+      <HeroImage1 src="/assets/HeroSectionImage1.JPG" alt="My hero picture" />;
+      <HeroImage2 src="/assets/HeroSectionImage2.JPG" alt="My hero picture" />;
       <HeroH1>Hi there, I'm Lu Yao.</HeroH1>
       <HeroH2>
         A quantity surveyor who is trying to learn new skills and venture into
@@ -36,6 +39,20 @@ const HeroContainer = styled.div`
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+`;
+
+const HeroImage1 = styled.img`
+  @media (max-width: 768px) {
+    display: none;
+  }
+`;
+
+const HeroImage2 = styled.img`
+  display: none;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
 `;
 
 const HeroH1 = styled.h1`

@@ -82,6 +82,10 @@ const Nav = styled.nav`
   align-items: center;
 
   border-bottom: 1px solid ${COLORS.gray[300]};
+
+  @media (max-width: 768px) {
+    border: 0;
+  }
 `;
 
 const NavbarContainer = styled.div`

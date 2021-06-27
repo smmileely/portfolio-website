@@ -7,31 +7,40 @@ import { COLORS, FONTS } from "../constants";
 const Footer = () => {
   return (
     <FooterContainer id="contacts">
-      <FooterWrapper>
-        <SocialIcons>
+      <SocialContainer>
+        <SocialIconsWrapper>
           <SocialIconLink
             href="https://www.linkedin.com/in/wengluyao/"
             target="_blank"
             aria-label="Linkedin"
           >
-            <FaLinkedin size={20} /> https://www.linkedin.com/in/wengluyao
+            <SocialIcon>
+              <FaLinkedin />
+            </SocialIcon>
+            <SocialLink>https://www.linkedin.com/in/wengluyao</SocialLink>
           </SocialIconLink>
           <SocialIconLink
             href="https://github.com/smmileely"
             target="_blank"
             aria-label="Github"
           >
-            <FaGithub size={20} /> https://github.com/smmileely
+            <SocialIcon>
+              <FaGithub />
+            </SocialIcon>
+            <SocialLink>https://github.com/smmileely</SocialLink>
           </SocialIconLink>
           <SocialIconLink
             href="mailto:wengluyao0127@gmail.com"
             target="_blank"
             aria-label="Envelope"
           >
-            <FaEnvelope size={20} /> wengluyao0127@gmail.com
+            <SocialIcon>
+              <FaEnvelope />
+            </SocialIcon>
+            <SocialLink>wengluyao0127@gmail.com</SocialLink>
           </SocialIconLink>
-        </SocialIcons>
-      </FooterWrapper>
+        </SocialIconsWrapper>
+      </SocialContainer>
       <WebsiteRights>© {new Date().getFullYear()} - Weng Lu Yao</WebsiteRights>
     </FooterContainer>
   );
@@ -44,16 +53,21 @@ const FooterContainer = styled.footer`
   background: ${COLORS.secondary};
 `;
 
-const FooterWrapper = styled.div`
+const SocialContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
 `;
 
-const SocialIcons = styled.div`
+const SocialIconsWrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 10px;
+
+  @media (max-width: 768px) {
+    flex-direction: row;
+    gap: 16px;
+  }
 `;
 
 const SocialIconLink = styled.a`
@@ -68,6 +82,20 @@ const SocialIconLink = styled.a`
 
   &:hover {
     color: ${COLORS.primary};
+  }
+`;
+
+const SocialIcon = styled.div`
+  font-size: ${FONTS.medium};
+
+  @media (max-width: 768px) {
+    font-size: ${FONTS.large};
+  }
+`;
+
+const SocialLink = styled.span`
+  @media (max-width: 768px) {
+    display: none;
   }
 `;
 
