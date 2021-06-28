@@ -13,6 +13,8 @@ const HeroSection = () => {
         A quantity surveyor who is trying to learn new skills and venture into
         the world of codes.
       </HeroH2>
+      <MobileHeroH1>Hello, I'm Lu Yao.</MobileHeroH1>
+      <MobileHeroH2>Front-end developer</MobileHeroH2>
     </HeroContainer>
   );
 };
@@ -30,6 +32,7 @@ const HeroContainer = styled.div`
   align-items: center;
 
   text-align: center;
+  color: ${COLORS.primary};
   /* background: -webkit-linear-gradient(
     0deg,
     ${COLORS.gray[900]},
@@ -61,21 +64,48 @@ const HeroH1 = styled.h1`
   font-size: ${FONTS.title};
 
   @media (max-width: 768px) {
+    display: none;
+  }
+`;
+
+const HeroH2 = styled.h2`
+  font-size: ${FONTS.medium};
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+`;
+
+const MobileHeroH1 = styled.h1`
+  @media (max-width: 768px) {
     position: absolute;
     z-index: 999;
     margin: 0 auto;
     left: 14px;
     right: 0;
     top: 46%;
-    text-align: left;
     width: 100%;
-    color: black;
+
+    text-align: left;
+
     font-size: ${FONTS.heading};
   }
 `;
 
-const HeroH2 = styled.h2`
-  font-size: ${FONTS.medium};
+const MobileHeroH2 = styled.h1`
+  @media (max-width: 768px) {
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 14px;
+    right: 0;
+    top: 51%;
+    width: 100%;
+
+    text-align: right;
+
+    font-size: ${FONTS.large};
+  }
 `;
 
 export default HeroSection;

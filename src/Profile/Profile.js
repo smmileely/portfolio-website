@@ -9,18 +9,19 @@ const Profile = () => {
       <ProfileContent>
         <ProfileHeader>About Me</ProfileHeader>
         <ProfileP>
-          Not graduated from a computer science degree, but slowly found my
-          interest in coding especially during this pandemic season. I had a lot
-          of fun playing with different tools and definitely struggled too.
+          Not graduated from a computer science degree, late to the game but I'm
+          glad I have started my journey with coding. I had a lot of fun playing
+          with different tools and definitely struggled at the same time too.
           <br />
           <br />
           Started with python and slowly ventured into React, still improving so
-          this portfolio website is my little project to showcase what I learnt
-          so far.
+          this portfolio website is my little project to showcase what I have
+          learnt so far. I asipire to make digital user experience easier and
+          simpler.
           <br />
           <br />
-          I'am excited to fill this space with more projects that I have learnt
-          so far! Stay tuned!
+          I'am excited to fill this space with more projects that I have done!
+          Stay tuned!
         </ProfileP>
       </ProfileContent>
     </ProfileContainer>
