@@ -1,9 +1,9 @@
-import React from "react";
-import styled from "styled-components";
-import { FaBars } from "react-icons/fa";
-import { Link } from "react-scroll";
+import React from 'react';
+import styled from 'styled-components';
+import { FaBars } from 'react-icons/fa';
+import { Link } from 'react-scroll';
 
-import { COLORS, WEIGHTS, FONTS } from "../constants";
+import { COLORS, WEIGHTS, FONTS } from '../constants';
 
 const Navbar = ({ toggle }) => {
   return (
@@ -14,57 +14,47 @@ const Navbar = ({ toggle }) => {
         </MobileIcon>
         <NavMenu>
           <NavLink
-            activeClass="active"
-            to="profile"
+            activeClass='active'
+            to='profile'
             smooth={true}
             duration={500}
-            spy={true}
-            exact="true"
-            offset={-80}
+            exact='true'
           >
             Profile
           </NavLink>
           <NavLink
-            activeClass="active"
-            to="skills"
+            activeClass='active'
+            to='skills'
             smooth={true}
             duration={500}
-            spy={true}
-            exact="true"
-            offset={-80}
+            exact='true'
           >
             Skills
           </NavLink>
           <NavLink
-            activeClass="active"
-            to="experience"
+            activeClass='active'
+            to='experience'
             smooth={true}
             duration={500}
-            spy={true}
-            exact="true"
-            offset={-80}
+            exact='true'
           >
             Experience
           </NavLink>
           <NavLink
-            activeClass="active"
-            to="education"
+            activeClass='active'
+            to='education'
             smooth={true}
             duration={500}
-            spy={true}
-            exact="true"
-            offset={-80}
+            exact='true'
           >
             Education
           </NavLink>
           <NavLink
-            activeClass="active"
-            to="contacts"
+            activeClass='active'
+            to='contacts'
             smooth={true}
             duration={500}
-            spy={true}
-            exact="true"
-            offset={-80}
+            exact='true'
           >
             Contacts
           </NavLink>

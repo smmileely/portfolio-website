@@ -1,14 +1,14 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
-import { COLORS, WEIGHTS, FONTS } from "../constants";
+import { COLORS, WEIGHTS, FONTS } from '../constants';
 
 const InfoCard = ({ header, data }) => {
   return (
-    <InfoWrapper>
+    <InfoWrapper id={header.toLowerCase()}>
       <InfoHeader>{header}</InfoHeader>
       {data.map((item, i) => (
-        <InfoContentWrapper key={i} id={item.id}>
+        <InfoContentWrapper key={i}>
           <Lead>{item.lead}</Lead>
           <CompanyDateWrapper>
             <span>{item.company}</span>
