@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import { COLORS, WEIGHTS } from "../constants";
+import { COLORS, WEIGHTS, FONTS } from "../constants";
 
 const InfoCard = ({ header, data }) => {
   return (
@@ -39,7 +39,7 @@ const InfoHeader = styled.div`
 
   color: ${COLORS.gray[900]};
   font-weight: ${WEIGHTS.bold};
-  font-size: 32px;
+  font-size: ${FONTS.xlarge};
   line-height: 32px;
   letter-spacing: 1.4px;
   text-transform: uppercase;
@@ -55,7 +55,7 @@ const InfoContentWrapper = styled.div`
 const Lead = styled.div`
   color: ${COLORS.gray[900]};
   font-weight: ${WEIGHTS.medium};
-  font-size: 20px;
+  font-size: ${FONTS.medium};
 `;
 
 const CompanyDateWrapper = styled.div`
@@ -66,22 +66,22 @@ const CompanyDateWrapper = styled.div`
 
   color: ${COLORS.gray[900]};
   font-weight: ${WEIGHTS.normal};
-  font-size: 16px;
+  font-size: ${FONTS.small};
 `;
 
 const DescriptionWrapper = styled.ul`
   text-align: justify;
-  list-style: square;
+  list-style: circle;
 `;
 
 const Description = styled.li`
   color: ${COLORS.gray[700]};
   font-weight: ${WEIGHTS.normal};
-  font-size: 16px;
+  font-size: ${FONTS.small};
 
   ::marker {
     color: ${COLORS.primary};
-    font-size: 1.2rem;
+    font-size: ${FONTS.medium};
   }
 `;
 

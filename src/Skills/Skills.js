@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import { COLORS, WEIGHTS } from "../constants";
+import { COLORS, WEIGHTS, FONTS } from "../constants";
 
 const Skills = ({ header, data }) => {
   return (
@@ -42,7 +42,7 @@ const SkillHeader = styled.div`
 
   color: ${COLORS.gray[900]};
   font-weight: ${WEIGHTS.bold};
-  font-size: 32px;
+  font-size: ${FONTS.xlarge};
   line-height: 32px;
   letter-spacing: 1.4px;
   text-transform: uppercase;
@@ -68,11 +68,11 @@ const SkillListWrapper = styled.ul`
 const SkillList = styled.li`
   color: ${COLORS.gray[900]};
   font-weight: ${WEIGHTS.normal};
-  font-size: 16px;
+  font-size: ${FONTS.small};
 
   ::marker {
     color: ${COLORS.primary};
-    font-size: 1.2rem;
+    font-size: ${FONTS.medium};
   }
 `;
 
