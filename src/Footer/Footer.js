@@ -2,12 +2,19 @@ import React from 'react';
 import styled from 'styled-components';
 import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
 
-import { COLORS, FONTS } from '../constants';
+import { COLORS, FONTS, WEIGHTS } from '../constants';
 
 const Footer = () => {
   return (
     <FooterContainer id='contacts'>
       <SocialContainer>
+        <Button
+          href='../../public/assets/Weng Lu Yao CV.pdf'
+          target='_blank'
+          aria-label='Download my resume'
+        >
+          Get my CV
+        </Button>
         <SocialIconsWrapper>
           <SocialIconLink
             href='https://www.linkedin.com/in/wengluyao/'
@@ -48,15 +55,41 @@ const Footer = () => {
 
 const FooterContainer = styled.footer`
   position: relative;
-  padding: 60px 20px;
+  padding: 100px 20px;
 
   background: ${COLORS.secondary};
 `;
 
 const SocialContainer = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+`;
+
+const Button = styled.a`
+    width: 140px;
+    align-self: center;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+
+    color: ${COLORS.white};
+    background: ${COLORS.gray[900]};
+    font-size: ${FONTS.small};
+    font-weight: ${WEIGHTS.medium};
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 2px;
+    transition: 0.5s ease;
+    cursor: pointer;
+  }
+
+  &:hover {
+    background: ${COLORS.primary};
+  }
+
+
 `;
 
 const SocialIconsWrapper = styled.div`
