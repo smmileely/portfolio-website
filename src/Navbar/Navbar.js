@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { FaBars } from "react-icons/fa";
 import { Link } from "react-scroll";
 
-import { COLORS, WEIGHTS } from "../constants";
+import { COLORS, WEIGHTS, FONTS } from "../constants";
 
 const Navbar = ({ toggle }) => {
   return (
@@ -82,6 +82,10 @@ const Nav = styled.nav`
   align-items: center;
 
   border-bottom: 1px solid ${COLORS.gray[300]};
+
+  @media (max-width: 768px) {
+    border: 0;
+  }
 `;
 
 const NavbarContainer = styled.div`
@@ -104,7 +108,7 @@ const MobileIcon = styled.div`
     display: flex;
 
     transform: translate(-100%, 60%);
-    font-size: 1.5rem;
+    font-size: ${FONTS.large};
     cursor: pointer;
     color: ${COLORS.gray[900]};
   }
@@ -124,7 +128,7 @@ const NavMenu = styled.ul`
 `;
 
 const NavLink = styled(Link)`
-  font-size: 1.125rem;
+  font-size: ${FONTS.medium};
   text-transform: uppercase;
   text-decoration: none;
   color: ${COLORS.gray[700]};

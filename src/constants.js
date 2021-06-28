@@ -16,3 +16,11 @@ export const WEIGHTS = {
   medium: 600,
   bold: 800,
 };
+
+export const FONTS = {
+  small: "1rem",
+  medium: "1.25rem",
+  large: "1.5rem",
+  xlarge: "2rem",
+  xxlarge: "2.5rem",
+};
