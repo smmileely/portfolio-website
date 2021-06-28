@@ -1,11 +1,11 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
-import { COLORS, WEIGHTS, FONTS } from "../constants";
+import { COLORS, WEIGHTS, FONTS } from '../constants';
 
 const Skills = ({ header, data }) => {
   return (
-    <SkillContainer id="skills">
+    <SkillContainer id='skills'>
       {data.map((item, i) => (
         <SkillContent key={i}>
           <SkillHeader>{header}</SkillHeader>
@@ -42,7 +42,7 @@ const SkillHeader = styled.div`
 
   color: ${COLORS.gray[900]};
   font-weight: ${WEIGHTS.bold};
-  font-size: ${FONTS.xlarge};
+  font-size: ${FONTS.heading};
   line-height: 32px;
   letter-spacing: 1.4px;
   text-transform: uppercase;

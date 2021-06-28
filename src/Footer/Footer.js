@@ -1,18 +1,18 @@
-import React from "react";
-import styled from "styled-components";
-import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
+import React from 'react';
+import styled from 'styled-components';
+import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
 
-import { COLORS, FONTS } from "../constants";
+import { COLORS, FONTS } from '../constants';
 
 const Footer = () => {
   return (
-    <FooterContainer id="contacts">
+    <FooterContainer id='contacts'>
       <SocialContainer>
         <SocialIconsWrapper>
           <SocialIconLink
-            href="https://www.linkedin.com/in/wengluyao/"
-            target="_blank"
-            aria-label="Linkedin"
+            href='https://www.linkedin.com/in/wengluyao/'
+            target='_blank'
+            aria-label='Linkedin'
           >
             <SocialIcon>
               <FaLinkedin />
@@ -20,9 +20,9 @@ const Footer = () => {
             <SocialLink>https://www.linkedin.com/in/wengluyao</SocialLink>
           </SocialIconLink>
           <SocialIconLink
-            href="https://github.com/smmileely"
-            target="_blank"
-            aria-label="Github"
+            href='https://github.com/smmileely'
+            target='_blank'
+            aria-label='Github'
           >
             <SocialIcon>
               <FaGithub />
@@ -30,9 +30,9 @@ const Footer = () => {
             <SocialLink>https://github.com/smmileely</SocialLink>
           </SocialIconLink>
           <SocialIconLink
-            href="mailto:wengluyao0127@gmail.com"
-            target="_blank"
-            aria-label="Envelope"
+            href='mailto:wengluyao0127@gmail.com'
+            target='_blank'
+            aria-label='Envelope'
           >
             <SocialIcon>
               <FaEnvelope />
@@ -66,7 +66,7 @@ const SocialIconsWrapper = styled.div`
 
   @media (max-width: 768px) {
     flex-direction: row;
-    gap: 16px;
+    gap: 20px;
   }
 `;
 

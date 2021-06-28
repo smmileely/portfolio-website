@@ -1,11 +1,11 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
-import { COLORS, WEIGHTS, FONTS } from "../constants";
+import { COLORS, WEIGHTS, FONTS } from '../constants';
 
 const Profile = () => {
   return (
-    <ProfileContainer id="profile">
+    <ProfileContainer id='profile'>
       <ProfileContent>
         <ProfileHeader>About Me</ProfileHeader>
         <ProfileP>
@@ -41,6 +41,11 @@ const ProfileContent = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    padding: 0 32px;
+  }
 `;
 
 const ProfileHeader = styled.div`
@@ -48,7 +53,7 @@ const ProfileHeader = styled.div`
 
   color: ${COLORS.gray[900]};
   font-weight: ${WEIGHTS.bold};
-  font-size: ${FONTS.xlarge};
+  font-size: ${FONTS.heading};
   line-height: 32px;
   letter-spacing: 1.4px;
   text-transform: uppercase;
@@ -60,6 +65,10 @@ const ProfileP = styled.p`
   color: ${COLORS.gray[700]};
   font-weight: ${WEIGHTS.medium};
   font-size: ${FONTS.small};
+
+  @media (max-width: 768px) {
+    text-align: justify;
+  }
 `;
 
 export default Profile;

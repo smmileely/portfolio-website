@@ -1,9 +1,9 @@
-import React from "react";
-import styled from "styled-components";
-import { FaTimes } from "react-icons/fa";
-import { Link } from "react-scroll";
+import React from 'react';
+import styled from 'styled-components';
+import { FaTimes } from 'react-icons/fa';
+import { Link } from 'react-scroll';
 
-import { COLORS, WEIGHTS, FONTS } from "../constants";
+import { COLORS, WEIGHTS, FONTS } from '../constants';
 
 const Sidebar = ({ isOpen, toggle }) => {
   return (
@@ -13,19 +13,19 @@ const Sidebar = ({ isOpen, toggle }) => {
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLink to="profile" onClick={toggle}>
+          <SidebarLink to='profile' onClick={toggle}>
             Profile
           </SidebarLink>
-          <SidebarLink to="skills" onClick={toggle}>
+          <SidebarLink to='skills' onClick={toggle}>
             Skills
           </SidebarLink>
-          <SidebarLink to="experience" onClick={toggle}>
+          <SidebarLink to='experience' onClick={toggle}>
             Experience
           </SidebarLink>
-          <SidebarLink to="education" onClick={toggle}>
+          <SidebarLink to='education' onClick={toggle}>
             Education
           </SidebarLink>
-          <SidebarLink to="contacts" onClick={toggle}>
+          <SidebarLink to='contacts' onClick={toggle}>
             Contacts
           </SidebarLink>
         </SidebarMenu>
@@ -51,8 +51,8 @@ const SidebarContainer = styled.aside`
 
     background: white;
     transition: 0.3s ease-in-out;
-    opacity: ${({ isOpen }) => (isOpen ? "100%" : "0")};
-    top: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
+    opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
+    top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
   }
 `;
 
@@ -66,7 +66,7 @@ const Icon = styled.div`
   right: 1.5rem;
 
   background: transparent;
-  font-size: ${FONTS.xlarge};
+  font-size: ${FONTS.heading};
   cursor: pointer;
   outline: none;
 `;

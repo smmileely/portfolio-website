@@ -39,7 +39,7 @@ const InfoHeader = styled.div`
 
   color: ${COLORS.gray[900]};
   font-weight: ${WEIGHTS.bold};
-  font-size: ${FONTS.xlarge};
+  font-size: ${FONTS.heading};
   line-height: 32px;
   letter-spacing: 1.4px;
   text-transform: uppercase;

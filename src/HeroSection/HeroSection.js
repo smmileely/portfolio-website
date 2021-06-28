@@ -1,13 +1,13 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
-import { COLORS, FONTS } from "../constants";
+import { COLORS, FONTS } from '../constants';
 
 const HeroSection = () => {
   return (
-    <HeroContainer id="home">
-      <HeroImage1 src="/assets/HeroSectionImage1.JPG" alt="My hero picture" />;
-      <HeroImage2 src="/assets/HeroSectionImage2.JPG" alt="My hero picture" />;
+    <HeroContainer id='home'>
+      <HeroImage1 src='/assets/HeroSectionImage1.JPG' alt='My hero picture' />
+      <HeroImage2 src='/assets/HeroSectionImage2.JPG' alt='My hero picture' />
       <HeroH1>Hi there, I'm Lu Yao.</HeroH1>
       <HeroH2>
         A quantity surveyor who is trying to learn new skills and venture into
@@ -54,7 +54,7 @@ const HeroImage2 = styled.img`
 `;
 
 const HeroH1 = styled.h1`
-  font-size: ${FONTS.xxlarge};
+  font-size: ${FONTS.title};
 `;
 
 const HeroH2 = styled.h2`

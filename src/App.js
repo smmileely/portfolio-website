@@ -107,7 +107,7 @@ const ScrollToTop = styled(FiArrowUpCircle)`
   right: 20px;
 
   color: ${COLORS.gray[700]};
-  font-size: ${FONTS.xxlarge};
+  font-size: ${FONTS.title};
   cursor: pointer;
 
   /* Animation */
