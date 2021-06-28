@@ -35,7 +35,7 @@ const InfoWrapper = styled.div`
 
   @media (max-width: 768px) {
     width: 100%;
-    padding: 32px 32px;
+    padding: 32px;
   }
 `;
 

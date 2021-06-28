@@ -38,7 +38,7 @@ const SkillContent = styled.div`
 
   @media (max-width: 768px) {
     width: 100%;
-    padding: 32px 32px;
+    padding: 32px;
   }
 `;
 
@@ -71,6 +71,7 @@ const SkillListWrapper = styled.ul`
 
   @media (max-width: 768px) {
     flex-direction: column;
+    align-self: flex-start;
     gap: 10px;
   }
 `;
