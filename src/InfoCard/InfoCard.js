@@ -32,6 +32,11 @@ const InfoWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    padding: 32px 32px;
+  }
 `;
 
 const InfoHeader = styled.div`
@@ -56,6 +61,11 @@ const Lead = styled.div`
   color: ${COLORS.gray[900]};
   font-weight: ${WEIGHTS.medium};
   font-size: ${FONTS.medium};
+
+  @media (max-width: 768px) {
+    align-self: center;
+    text-align: center;
+  }
 `;
 
 const CompanyDateWrapper = styled.div`

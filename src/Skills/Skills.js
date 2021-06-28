@@ -35,6 +35,11 @@ const SkillContent = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    padding: 32px 32px;
+  }
 `;
 
 const SkillHeader = styled.div`
@@ -53,6 +58,7 @@ const SkillP = styled.p`
 
   color: ${COLORS.gray[700]};
   font-weight: ${WEIGHTS.medium};
+  text-align: justify;
 `;
 
 const SkillListWrapper = styled.ul`
@@ -61,8 +67,12 @@ const SkillListWrapper = styled.ul`
   display: flex;
   gap: 80px;
 
-  text-align: justify;
   list-style: circle;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 10px;
+  }
 `;
 
 const SkillList = styled.li`
