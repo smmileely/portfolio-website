@@ -77,9 +77,11 @@ const HeroH2 = styled.h2`
 `;
 
 const MobileHeroH1 = styled.h1`
+  display: none;
+
   @media (max-width: 768px) {
     position: absolute;
-    z-index: 999;
+    z-index: 2;
     margin: 0 auto;
     left: 14px;
     right: 0;
@@ -93,9 +95,11 @@ const MobileHeroH1 = styled.h1`
 `;
 
 const MobileHeroH2 = styled.h1`
+  display: none;
+
   @media (max-width: 768px) {
     position: absolute;
-    z-index: 999;
+    z-index: 2;
     margin: 0 auto;
     left: 14px;
     right: 0;
