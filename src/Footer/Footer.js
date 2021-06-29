@@ -8,13 +8,13 @@ const Footer = () => {
   return (
     <FooterContainer id='contacts'>
       <SocialContainer>
-        <Button
+        <CVButton
           href='https://drive.google.com/file/d/15whEXhbDUFF-MZ1pGVgP8BEDNrkeJbU4/view?usp=sharing'
           target='_blank'
           aria-label='Download my resume'
         >
           Get my resume
-        </Button>
+        </CVButton>
         <SocialIconsWrapper>
           <SocialIconLink
             href='https://www.linkedin.com/in/wengluyao/'
@@ -67,24 +67,23 @@ const SocialContainer = styled.div`
   align-items: center;
 `;
 
-const Button = styled.a`
-    width: 180px;
-    padding: 12px 24px;
-    margin-bottom: 30px;
+const CVButton = styled.a`
+  width: 180px;
+  padding: 12px 24px;
+  margin-bottom: 30px;
 
-    align-self: center;
+  align-self: center;
 
-    color: ${COLORS.gray[900]};
-    background: ${COLORS.secondaryFocus};
-    font-size: ${FONTS.small};
-    font-weight: ${WEIGHTS.medium};
-    text-transform: uppercase;
-    text-decoration: none;
-    text-align: center;
-    border-radius: 2px;
-    transition: 0.5s ease;
-    cursor: pointer;
-  }
+  color: ${COLORS.gray[900]};
+  background: ${COLORS.secondaryFocus};
+  font-size: ${FONTS.small};
+  font-weight: ${WEIGHTS.medium};
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 2px;
+  transition: 0.5s ease;
+  cursor: pointer;
 
   &:hover {
     background: ${COLORS.primaryFocus};
@@ -122,7 +121,7 @@ const SocialIcon = styled.div`
 
   @media (max-width: 768px) {
     font-size: ${FONTS.large};
-
+  }
 `;
 
 const SocialLink = styled.span`
