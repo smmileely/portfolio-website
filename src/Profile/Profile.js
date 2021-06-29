@@ -9,19 +9,23 @@ const Profile = () => {
       <ProfileContent>
         <ProfileHeader>About Me</ProfileHeader>
         <ProfileP>
-          Not graduated from a computer science degree, late to the game but I'm
-          glad I have started my journey with coding. I had a lot of fun playing
-          with different tools and definitely struggled at the same time too.
+          Popular to contrary belief, I was not from a technical background,
+          late to the game, I'm glad to have embarked on this coding journey.
           <br />
           <br />
-          Started with python and slowly ventured into React, still improving so
-          this portfolio website is my little project to showcase what I have
-          learnt so far. I asipire to make digital user experience easier and
-          simpler.
+          Navigating through this journey has its own set of twists and turns,
+          ups and down. But the transition from not understanding to spontaneous
+          comprehension is often accompanied by an exclamation of joy and
+          satisfacton.
           <br />
           <br />
-          I'am excited to fill this space with more projects that I have done!
-          Stay tuned!
+          The mission? To achieve full-stack status. The aspiration? To find
+          that sweet spot which balances user interface and user experience. As
+          the saying goes, UI without UX is like beauty without brains - not
+          good enough.
+          <br />
+          <br />
+          Stay with me on this journey and watch this space.
         </ProfileP>
       </ProfileContent>
     </ProfileContainer>
@@ -50,8 +54,9 @@ const ProfileContent = styled.div`
 `;
 
 const ProfileHeader = styled.div`
-  align-self: center;
   padding: 12px 24px;
+
+  align-self: center;
 
   background: ${COLORS.primary};
   color: ${COLORS.gray[900]};

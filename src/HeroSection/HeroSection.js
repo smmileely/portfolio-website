@@ -7,7 +7,7 @@ const HeroSection = () => {
   return (
     <HeroContainer id='home'>
       <HeroImage1 src='/assets/HeroSectionImage1.JPG' alt='My hero picture' />
-      <HeroImage2 src='/assets/IMG_8815.JPG' alt='My hero picture' />
+      <HeroImage2 src='/assets/HeroSectionImage2.JPG' alt='My hero picture' />
       <HeroH1>Hi there, I'm Lu Yao.</HeroH1>
       <HeroH2>
         A quantity surveyor who is trying to learn new skills and venture into
@@ -52,14 +52,17 @@ const HeroImage2 = styled.img`
   display: none;
 
   @media (max-width: 768px) {
-    display: block;
     max-width: 100%;
     height: auto;
     margin: -64px 0px;
+
+    display: block;
   }
 `;
 
 const HeroH1 = styled.h1`
+  padding-top: 10px;
+
   font-size: ${FONTS.title};
 
   @media (max-width: 768px) {

@@ -40,8 +40,9 @@ const InfoWrapper = styled.div`
 `;
 
 const InfoHeader = styled.div`
-  align-self: center;
   padding: 12px 24px;
+
+  align-self: center;
 
   background: ${COLORS.primary};
   color: ${COLORS.gray[900]};
@@ -66,6 +67,7 @@ const Lead = styled.div`
 
   @media (max-width: 768px) {
     align-self: center;
+
     text-align: center;
   }
 `;

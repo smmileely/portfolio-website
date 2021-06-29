@@ -43,8 +43,9 @@ const SkillContent = styled.div`
 `;
 
 const SkillHeader = styled.div`
-  align-self: center;
   padding: 12px 24px;
+
+  align-self: center;
 
   background: ${COLORS.primary};
   color: ${COLORS.gray[900]};
@@ -77,10 +78,11 @@ const SkillListWrapper = styled.ul`
   list-style: circle;
 
   @media (max-width: 768px) {
+    margin-left: 20px;
+
     flex-direction: column;
     align-self: flex-start;
     gap: 10px;
-    margin-left: 20px;
   }
 `;
 

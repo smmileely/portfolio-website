@@ -69,9 +69,10 @@ const SocialContainer = styled.div`
 
 const Button = styled.a`
     width: 180px;
-    align-self: center;
     padding: 12px 24px;
     margin-bottom: 30px;
+
+    align-self: center;
 
     color: ${COLORS.gray[900]};
     background: ${COLORS.secondaryFocus};
@@ -102,10 +103,10 @@ const SocialIconsWrapper = styled.div`
 `;
 
 const SocialIconLink = styled.a`
+  width: fit-content;
+
   display: flex;
   gap: 10px;
-
-  width: fit-content;
 
   color: ${COLORS.gray[700]};
   font-size: ${FONTS.small};
