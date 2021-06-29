@@ -44,7 +44,9 @@ const SkillContent = styled.div`
 
 const SkillHeader = styled.div`
   align-self: center;
+  padding: 12px 24px;
 
+  background: ${COLORS.primary};
   color: ${COLORS.gray[900]};
   font-weight: ${WEIGHTS.bold};
   font-size: ${FONTS.heading};
@@ -59,6 +61,10 @@ const SkillP = styled.p`
   color: ${COLORS.gray[700]};
   font-weight: ${WEIGHTS.medium};
   text-align: center;
+
+  @media (max-width: 768px) {
+    text-align: justify;
+  }
 `;
 
 const SkillListWrapper = styled.ul`

@@ -13,7 +13,7 @@ const Footer = () => {
           target='_blank'
           aria-label='Download my resume'
         >
-          Get my CV
+          Get my resume
         </Button>
         <SocialIconsWrapper>
           <SocialIconLink
@@ -68,7 +68,7 @@ const SocialContainer = styled.div`
 `;
 
 const Button = styled.a`
-    width: 140px;
+    width: 180px;
     align-self: center;
     padding: 12px 24px;
     margin-bottom: 30px;

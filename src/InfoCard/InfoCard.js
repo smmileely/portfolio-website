@@ -41,7 +41,9 @@ const InfoWrapper = styled.div`
 
 const InfoHeader = styled.div`
   align-self: center;
+  padding: 12px 24px;
 
+  background: ${COLORS.primary};
   color: ${COLORS.gray[900]};
   font-weight: ${WEIGHTS.bold};
   font-size: ${FONTS.heading};

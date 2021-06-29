@@ -9,11 +9,11 @@ export const COLORS = {
   },
   // primary: 'hsl(354deg, 65%, 76.9%)',
   // secondary: 'hsl(251deg, 32.4%, 86.7%, 0.4)',
-  primary: 'rgb(247,235,228)',
-  secondary: 'rgb(239,218,218)',
-  primaryFocus: 'rgb(239,214,100)',
-  secondaryFocus: 'rgb(255,208,192)',
-  bulletColor: 'rgb(201,132,128)',
+  primary: 'hsl(22deg, 54.3%, 93.1%)',
+  secondary: 'hsl(0deg, 39.6%, 89.6%)',
+  primaryFocus: 'hsl(49deg, 81.3%, 66.5%)',
+  secondaryFocus: 'hsl(15deg, 100%, 87.6%)',
+  bulletColor: 'hsl(3deg, 40.3%, 64.5%)',
 };
 
 export const WEIGHTS = {

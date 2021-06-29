@@ -51,7 +51,9 @@ const ProfileContent = styled.div`
 
 const ProfileHeader = styled.div`
   align-self: center;
+  padding: 12px 24px;
 
+  background: ${COLORS.primary};
   color: ${COLORS.gray[900]};
   font-weight: ${WEIGHTS.bold};
   font-size: ${FONTS.heading};
@@ -59,6 +61,7 @@ const ProfileHeader = styled.div`
   letter-spacing: 1.4px;
   text-transform: uppercase;
 `;
+
 const ProfileP = styled.p`
   margin-top: 24px;
 

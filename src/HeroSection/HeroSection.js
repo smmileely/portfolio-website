@@ -55,7 +55,7 @@ const HeroImage2 = styled.img`
     display: block;
     max-width: 100%;
     height: auto;
-    margin-top: -64px;
+    margin: -64px 0px;
   }
 `;
 
