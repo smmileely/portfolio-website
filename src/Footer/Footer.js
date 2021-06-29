@@ -9,7 +9,7 @@ const Footer = () => {
     <FooterContainer id='contacts'>
       <SocialContainer>
         <Button
-          href='../../public/assets/Weng Lu Yao CV.pdf'
+          href='https://drive.google.com/file/d/15whEXhbDUFF-MZ1pGVgP8BEDNrkeJbU4/view?usp=sharing'
           target='_blank'
           aria-label='Download my resume'
         >
