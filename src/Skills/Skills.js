@@ -72,6 +72,7 @@ const SkillListWrapper = styled.ul`
 
   display: flex;
   gap: 80px;
+  /* flex-wrap: wrap; */
 
   list-style: circle;
 
@@ -79,6 +80,7 @@ const SkillListWrapper = styled.ul`
     flex-direction: column;
     align-self: flex-start;
     gap: 10px;
+    margin-left: 20px;
   }
 `;
 

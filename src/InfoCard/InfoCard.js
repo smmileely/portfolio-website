@@ -84,6 +84,10 @@ const CompanyDateWrapper = styled.div`
 const DescriptionWrapper = styled.ul`
   text-align: justify;
   list-style: circle;
+
+  @media (max-width: 768px) {
+    margin-left: 20px;
+  }
 `;
 
 const Description = styled.li`

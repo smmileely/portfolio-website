@@ -88,8 +88,6 @@ const Button = styled.a`
   &:hover {
     background: ${COLORS.primaryFocus};
   }
-
-
 `;
 
 const SocialIconsWrapper = styled.div`

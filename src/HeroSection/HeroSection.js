@@ -32,7 +32,7 @@ const HeroContainer = styled.div`
   align-items: center;
 
   text-align: center;
-  color: ${COLORS.primaryFocus};
+  color: ${COLORS.bulletColor};
   /* background: -webkit-linear-gradient(
     0deg,
     ${COLORS.gray[900]},
