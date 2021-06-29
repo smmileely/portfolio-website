@@ -32,7 +32,7 @@ const HeroContainer = styled.div`
   align-items: center;
 
   text-align: center;
-  color: ${COLORS.primary};
+  color: ${COLORS.primaryFocus};
   /* background: -webkit-linear-gradient(
     0deg,
     ${COLORS.gray[900]},
@@ -56,7 +56,6 @@ const HeroImage2 = styled.img`
     max-width: 100%;
     height: auto;
     margin-top: -64px;
-    overflow: hidden;
   }
 `;
 
@@ -86,10 +85,11 @@ const MobileHeroH1 = styled.h1`
     left: 14px;
     right: 0;
     top: 46%;
-    width: 100%;
+    max-width: 100%;
+
+    display: block;
 
     text-align: left;
-
     font-size: ${FONTS.heading};
   }
 `;
@@ -101,13 +101,14 @@ const MobileHeroH2 = styled.h1`
     position: absolute;
     z-index: 2;
     margin: 0 auto;
-    left: 14px;
-    right: 0;
+    left: 0;
+    right: 14px;
     top: 51%;
-    width: 100%;
+    max-width: 100%;
+
+    display: block;
 
     text-align: right;
-
     font-size: ${FONTS.large};
   }
 `;

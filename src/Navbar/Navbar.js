@@ -65,26 +65,30 @@ const Navbar = ({ toggle }) => {
 };
 
 const Nav = styled.nav`
-  height: 80px;
-
   display: flex;
   justify-content: flex-end;
   align-items: center;
 
-  border-bottom: 1px solid ${COLORS.gray[300]};
+  /* border-bottom: 1px solid ${COLORS.gray[300]}; */
+  background: ${COLORS.primary};
 
   @media (max-width: 768px) {
-    border: 0;
+    background: ${COLORS.white};
   }
 `;
 
 const NavbarContainer = styled.div`
-  padding: 20px 40px;
+  padding: 36px 40px;
   max-width: 1100px;
 
   display: flex;
   align-items: center;
   gap: 48px;
+
+  @media (max-width: 768px) {
+    padding: 20px;
+    background: ${COLORS.white};
+  }
 `;
 
 const MobileIcon = styled.div`
@@ -93,7 +97,7 @@ const MobileIcon = styled.div`
   @media (max-width: 768px) {
     position: absolute;
     top: 10px;
-    right: 0;
+    right: 0px;
 
     display: flex;
 
@@ -118,15 +122,15 @@ const NavMenu = styled.ul`
 `;
 
 const NavLink = styled(Link)`
-  font-size: ${FONTS.medium};
+  font-size: ${FONTS.small};
   text-transform: uppercase;
   text-decoration: none;
-  color: ${COLORS.gray[700]};
+  color: ${COLORS.gray[900]};
   font-weight: ${WEIGHTS.medium};
   cursor: pointer;
 
   &:hover {
-    color: ${COLORS.primary};
+    color: ${COLORS.bulletColor};
   }
 `;
 

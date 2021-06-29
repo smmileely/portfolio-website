@@ -27,7 +27,7 @@ const InfoCard = ({ header, data }) => {
 
 const InfoWrapper = styled.div`
   padding: 32px 0px;
-  width: 55%;
+  width: 45%;
 
   display: flex;
   flex-direction: column;
@@ -90,7 +90,7 @@ const Description = styled.li`
   font-size: ${FONTS.small};
 
   ::marker {
-    color: ${COLORS.primary};
+    color: ${COLORS.bulletColor};
     font-size: ${FONTS.medium};
   }
 `;

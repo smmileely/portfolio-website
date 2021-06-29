@@ -7,8 +7,13 @@ export const COLORS = {
     700: 'hsl(220deg, 5%, 45%)',
     900: 'hsl(220deg, 3%, 20%)',
   },
-  primary: 'hsl(354deg, 65%, 76.9%)',
-  secondary: 'hsl(251deg, 32.4%, 86.7%, 0.4)',
+  // primary: 'hsl(354deg, 65%, 76.9%)',
+  // secondary: 'hsl(251deg, 32.4%, 86.7%, 0.4)',
+  primary: 'rgb(247,235,228)',
+  secondary: 'rgb(239,218,218)',
+  primaryFocus: 'rgb(239,214,100)',
+  secondaryFocus: 'rgb(255,208,192)',
+  bulletColor: 'rgb(201,132,128)',
 };
 
 export const WEIGHTS = {

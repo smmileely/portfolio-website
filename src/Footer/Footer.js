@@ -55,7 +55,7 @@ const Footer = () => {
 
 const FooterContainer = styled.footer`
   position: relative;
-  padding: 100px 20px;
+  padding: 80px 20px;
 
   background: ${COLORS.secondary};
 `;
@@ -70,11 +70,11 @@ const SocialContainer = styled.div`
 const Button = styled.a`
     width: 140px;
     align-self: center;
-    padding: 10px 20px;
-    margin-bottom: 20px;
+    padding: 12px 24px;
+    margin-bottom: 30px;
 
-    color: ${COLORS.white};
-    background: ${COLORS.gray[900]};
+    color: ${COLORS.gray[900]};
+    background: ${COLORS.secondaryFocus};
     font-size: ${FONTS.small};
     font-weight: ${WEIGHTS.medium};
     text-transform: uppercase;
@@ -86,7 +86,7 @@ const Button = styled.a`
   }
 
   &:hover {
-    background: ${COLORS.primary};
+    background: ${COLORS.primaryFocus};
   }
 
 
@@ -109,12 +109,12 @@ const SocialIconLink = styled.a`
 
   width: fit-content;
 
-  color: ${COLORS.gray[900]};
+  color: ${COLORS.gray[700]};
   font-size: ${FONTS.small};
   text-decoration: none;
 
   &:hover {
-    color: ${COLORS.primary};
+    color: ${COLORS.white};
   }
 `;
 
@@ -123,7 +123,7 @@ const SocialIcon = styled.div`
 
   @media (max-width: 768px) {
     font-size: ${FONTS.large};
-  }
+
 `;
 
 const SocialLink = styled.span`
@@ -137,7 +137,7 @@ const WebsiteRights = styled.small`
   bottom: 20px;
   left: 20px;
 
-  color: ${COLORS.gray[900]};
+  color: ${COLORS.gray[700]};
   font-size: ${FONTS.small};
 `;
 

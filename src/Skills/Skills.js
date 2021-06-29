@@ -58,7 +58,7 @@ const SkillP = styled.p`
 
   color: ${COLORS.gray[700]};
   font-weight: ${WEIGHTS.medium};
-  text-align: justify;
+  text-align: center;
 `;
 
 const SkillListWrapper = styled.ul`
@@ -82,7 +82,7 @@ const SkillList = styled.li`
   font-size: ${FONTS.small};
 
   ::marker {
-    color: ${COLORS.primary};
+    color: ${COLORS.bulletColor};
     font-size: ${FONTS.medium};
   }
 `;
