@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { FaBars } from 'react-icons/fa';
 import { Link } from 'react-scroll';
 
-import { COLORS, WEIGHTS, FONTS } from '../constants';
+import { WEIGHTS, FONTS } from '../constants';
 
 const Navbar = ({ toggle }) => {
   return (
@@ -69,11 +69,11 @@ const Nav = styled.nav`
   justify-content: flex-end;
   align-items: center;
 
-  /* border-bottom: 1px solid ${COLORS.gray[300]}; */
-  background: ${COLORS.primary};
+  /* border-bottom: 1px solid var(--color-gray-300); */
+  background: var(--color-pink-100);
 
   @media (max-width: 768px) {
-    background: ${COLORS.white};
+    background: var(--color-white);
   }
 `;
 
@@ -88,7 +88,7 @@ const NavbarContainer = styled.div`
   @media (max-width: 768px) {
     padding: 20px;
 
-    background: ${COLORS.white};
+    background: var(--color-white);
   }
 `;
 
@@ -105,7 +105,7 @@ const MobileIcon = styled.div`
     transform: translate(-100%, 60%);
     font-size: ${FONTS.large};
     cursor: pointer;
-    color: ${COLORS.gray[900]};
+    color: var(--color-gray-900);
   }
 `;
 
@@ -126,12 +126,12 @@ const NavLink = styled(Link)`
   font-size: ${FONTS.small};
   text-transform: uppercase;
   text-decoration: none;
-  color: ${COLORS.gray[900]};
+  color: var(--color-gray-900);
   font-weight: ${WEIGHTS.medium};
   cursor: pointer;
 
   &:hover {
-    color: ${COLORS.bulletColor};
+    color: var(--color-pink-500);
   }
 `;
 

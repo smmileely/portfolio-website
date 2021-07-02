@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { FaTimes } from 'react-icons/fa';
 import { Link } from 'react-scroll';
 
-import { COLORS, WEIGHTS, FONTS } from '../constants';
+import { WEIGHTS, FONTS } from '../constants';
 
 const Sidebar = ({ isOpen, toggle }) => {
   return (
@@ -57,7 +57,7 @@ const SidebarContainer = styled.aside`
 `;
 
 const CloseIcon = styled(FaTimes)`
-  color: ${COLORS.gray[900]};
+  color: var(--color-gray-900);
 `;
 
 const Icon = styled.div`
@@ -91,12 +91,12 @@ const SidebarLink = styled(Link)`
   cursor: pointer;
   text-transform: uppercase;
   text-decoration: none;
-  color: ${COLORS.gray[700]};
+  color: var(--color-gray-700);
   font-weight: ${WEIGHTS.medium};
   font-size: ${FONTS.medium};
 
   &:hover {
-    color: ${COLORS.bulletColor};
+    color: var(--color-pink-500);
     transition: 0.2s ease-in-out;
   }
 `;

@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { COLORS, FONTS } from '../constants';
+import { FONTS } from '../constants';
 
 const HeroSection = () => {
   return (
@@ -33,11 +33,11 @@ const HeroContainer = styled.div`
 
   overflow: hidden;
   text-align: center;
-  color: ${COLORS.bulletColor};
+  color: var(--color-pink-500);
   /* background: -webkit-linear-gradient(
     0deg,
-    ${COLORS.gray[900]},
-    ${COLORS.gray[100]}
+    var(--color-gray-900),
+    var(--color-gray-100)
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; */

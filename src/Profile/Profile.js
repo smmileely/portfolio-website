@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { COLORS, WEIGHTS, FONTS } from '../constants';
+import { WEIGHTS, FONTS } from '../constants';
 
 const Profile = () => {
   return (
@@ -58,8 +58,8 @@ const ProfileHeader = styled.div`
 
   align-self: center;
 
-  background: ${COLORS.primary};
-  color: ${COLORS.gray[900]};
+  background: var(--color-pink-100);
+  color: var(--color-gray-900);
   font-weight: ${WEIGHTS.bold};
   font-size: ${FONTS.heading};
   line-height: 32px;
@@ -71,7 +71,7 @@ const ProfileP = styled.p`
   margin-top: 24px;
 
   text-align: center;
-  color: ${COLORS.gray[700]};
+  color: var(--color-gray-700);
   font-weight: ${WEIGHTS.medium};
   font-size: ${FONTS.small};
 

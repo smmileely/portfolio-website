@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
 
-import { COLORS, FONTS, WEIGHTS } from '../constants';
+import { FONTS, WEIGHTS } from '../constants';
 import Pdf from '../Document/WengLuYaoCV.pdf';
 
 const Footer = () => {
@@ -54,7 +54,7 @@ const FooterContainer = styled.footer`
   position: relative;
   padding: 80px 20px;
 
-  background: ${COLORS.secondary};
+  background: var(--color-pink-300);
 `;
 
 const SocialContainer = styled.div`
@@ -71,8 +71,8 @@ const CVButton = styled.a`
 
   align-self: center;
 
-  color: ${COLORS.gray[900]};
-  background: ${COLORS.secondaryFocus};
+  color: var(--color-gray-900);
+  background: var(--color-coral);
   font-size: ${FONTS.small};
   font-weight: ${WEIGHTS.medium};
   text-transform: uppercase;
@@ -82,7 +82,7 @@ const CVButton = styled.a`
   cursor: pointer;
 
   &:hover {
-    background: ${COLORS.primaryFocus};
+    background: var(--color-yellow);
   }
 `;
 
@@ -103,12 +103,12 @@ const SocialIconLink = styled.a`
   display: flex;
   gap: 10px;
 
-  color: ${COLORS.gray[700]};
+  color: var(--color-gray-700);
   font-size: ${FONTS.small};
   text-decoration: none;
 
   &:hover {
-    color: ${COLORS.white};
+    color: var(--color-pink-500);
   }
 `;
 
@@ -131,7 +131,7 @@ const WebsiteRights = styled.small`
   bottom: 20px;
   left: 20px;
 
-  color: ${COLORS.gray[700]};
+  color: var(--color-gray-700);
   font-size: ${FONTS.small};
 `;
 

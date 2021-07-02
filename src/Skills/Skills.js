@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { COLORS, WEIGHTS, FONTS } from '../constants';
+import { WEIGHTS, FONTS } from '../constants';
 
 const Skills = ({ header, data }) => {
   return (
@@ -47,8 +47,8 @@ const SkillHeader = styled.div`
 
   align-self: center;
 
-  background: ${COLORS.primary};
-  color: ${COLORS.gray[900]};
+  background: var(--color-pink-100);
+  color: var(--color-gray-900);
   font-weight: ${WEIGHTS.bold};
   font-size: ${FONTS.heading};
   line-height: 32px;
@@ -59,7 +59,7 @@ const SkillHeader = styled.div`
 const SkillP = styled.p`
   margin-top: 24px;
 
-  color: ${COLORS.gray[700]};
+  color: var(--color-gray-700);
   font-weight: ${WEIGHTS.medium};
   text-align: center;
 
@@ -87,12 +87,12 @@ const SkillListWrapper = styled.ul`
 `;
 
 const SkillList = styled.li`
-  color: ${COLORS.gray[900]};
+  color: var(--color-gray-900);
   font-weight: ${WEIGHTS.normal};
   font-size: ${FONTS.small};
 
   ::marker {
-    color: ${COLORS.bulletColor};
+    color: var(--color-pink-500);
     font-size: ${FONTS.medium};
   }
 `;

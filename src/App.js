@@ -12,7 +12,7 @@ import InfoCard from './InfoCard';
 import Footer from './Footer';
 import { ExperienceData, EducationData, SkillsData } from './data';
 
-import { COLORS, FONTS } from './constants';
+import { FONTS } from './constants';
 
 const App = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -104,7 +104,7 @@ const ScrollToTop = styled(FiArrowUpCircle)`
   bottom: 20px;
   right: 20px;
 
-  color: ${COLORS.gray[700]};
+  color: var(--color-gray-700);
   font-size: ${FONTS.title};
   cursor: pointer;
 
@@ -114,7 +114,7 @@ const ScrollToTop = styled(FiArrowUpCircle)`
   transition: visibility 1s ease;
 
   &:hover {
-    color: ${COLORS.bulletColor};
+    color: var(--color-pink-500);
   }
 `;
 

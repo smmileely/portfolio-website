@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { COLORS, WEIGHTS, FONTS } from '../constants';
+import { WEIGHTS, FONTS } from '../constants';
 
 const InfoCard = ({ header, data }) => {
   return (
@@ -44,8 +44,8 @@ const InfoHeader = styled.div`
 
   align-self: center;
 
-  background: ${COLORS.primary};
-  color: ${COLORS.gray[900]};
+  background: var(--color-pink-100);
+  color: var(--color-gray-900);
   font-weight: ${WEIGHTS.bold};
   font-size: ${FONTS.heading};
   line-height: 32px;
@@ -61,7 +61,7 @@ const InfoContentWrapper = styled.div`
 `;
 
 const Lead = styled.div`
-  color: ${COLORS.gray[900]};
+  color: var(--color-gray-900);
   font-weight: ${WEIGHTS.medium};
   font-size: ${FONTS.medium};
 
@@ -78,7 +78,7 @@ const CompanyDateWrapper = styled.div`
   display: flex;
   justify-content: space-between;
 
-  color: ${COLORS.gray[900]};
+  color: var(--color-gray-900);
   font-weight: ${WEIGHTS.normal};
   font-size: ${FONTS.small};
 `;
@@ -93,12 +93,12 @@ const DescriptionWrapper = styled.ul`
 `;
 
 const Description = styled.li`
-  color: ${COLORS.gray[700]};
+  color: var(--color-gray-700);
   font-weight: ${WEIGHTS.normal};
   font-size: ${FONTS.small};
 
   ::marker {
-    color: ${COLORS.bulletColor};
+    color: var(--color-pink-500);
     font-size: ${FONTS.medium};
   }
 `;
