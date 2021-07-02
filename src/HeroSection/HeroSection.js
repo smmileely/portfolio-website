@@ -31,6 +31,7 @@ const HeroContainer = styled.div`
   justify-content: center;
   align-items: center;
 
+  overflow: hidden;
   text-align: center;
   color: ${COLORS.bulletColor};
   /* background: -webkit-linear-gradient(
@@ -72,6 +73,7 @@ const HeroH1 = styled.h1`
 
 const HeroH2 = styled.h2`
   font-size: ${FONTS.medium};
+  padding: 0px 20px;
 
   @media (max-width: 768px) {
     display: none;

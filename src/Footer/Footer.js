@@ -3,17 +3,14 @@ import styled from 'styled-components';
 import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
 
 import { COLORS, FONTS, WEIGHTS } from '../constants';
+import Pdf from '../Document/WengLuYaoCV.pdf';
 
 const Footer = () => {
   return (
     <FooterContainer id='contacts'>
       <SocialContainer>
-        <CVButton
-          href='https://drive.google.com/file/d/15whEXhbDUFF-MZ1pGVgP8BEDNrkeJbU4/view?usp=sharing'
-          target='_blank'
-          aria-label='Download my resume'
-        >
-          Get my resume
+        <CVButton href={Pdf} target='_blank' aria-label='Download my resume'>
+          Resume
         </CVButton>
         <SocialIconsWrapper>
           <SocialIconLink
@@ -82,7 +79,6 @@ const CVButton = styled.a`
   text-decoration: none;
   text-align: center;
   border-radius: 2px;
-  transition: 0.5s ease;
   cursor: pointer;
 
   &:hover {
